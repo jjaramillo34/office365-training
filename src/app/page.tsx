@@ -269,8 +269,9 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6">
                 <Award className="w-6 h-6 text-pink-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Certificate Ready</h3>
-              <p className="text-gray-600">Complete all modules and quizzes to earn your Office 365 Mastery certificate.</p>
+              {/* something different here */}
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Time-Saving Tips</h3>
+              <p className="text-gray-600">Learn shortcuts, automation, and best practices to work more efficiently.</p>
             </div>
           </div>
         </div>

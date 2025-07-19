@@ -16,7 +16,8 @@ import {
   Zap,
   Star,
   Award,
-  Keyboard
+  Keyboard,
+  Download
 } from "lucide-react";
 import ExcelProgressSidebarClient from "./ExcelProgressSidebarClient";
 
@@ -253,6 +254,74 @@ export default async function ExcelPage() {
                         </div>
                       </div>
                     </a>
+                  </div>
+                </div>
+
+                {/* ASAP Utilities Section */}
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                    <Award className="w-5 h-5 mr-2 text-green-600" />
+                    ASAP Utilities - Excel Power Tool
+                  </h3>
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
+                    <div className="flex items-start space-x-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Award size={32} className="text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-2xl font-bold text-gray-900 mb-3">Boost Your Excel Productivity</h4>
+                        <p className="text-gray-700 mb-4 leading-relaxed">
+                          ASAP Utilities is a powerful Excel add-in that provides over 300 functions to enhance your Excel experience. 
+                          It's particularly valuable for educational data management and administrative tasks.
+                        </p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                          <div className="bg-white rounded-xl p-4 border border-blue-200">
+                            <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+                              <Users className="w-4 h-4 mr-2 text-blue-600" />
+                              Key Features
+                            </h5>
+                            <ul className="text-sm text-gray-600 space-y-1">
+                              <li>• Data cleaning and formatting tools</li>
+                              <li>• Advanced text manipulation functions</li>
+                              <li>• Bulk operations for large datasets</li>
+                              <li>• Custom formulas and calculations</li>
+                            </ul>
+                          </div>
+                          <div className="bg-white rounded-xl p-4 border border-blue-200">
+                            <h5 className="font-semibold text-gray-900 mb-2 flex items-center">
+                              <Target className="w-4 h-4 mr-2 text-blue-600" />
+                              Educational Benefits
+                            </h5>
+                            <ul className="text-sm text-gray-600 space-y-1">
+                              <li>• Streamline student data management</li>
+                              <li>• Automate attendance tracking</li>
+                              <li>• Generate reports efficiently</li>
+                              <li>• Handle large class datasets</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                          <a 
+                            href="https://www.asap-utilities.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+                          >
+                            <Download className="w-4 h-4 mr-2" />
+                            Download ASAP Utilities
+                          </a>
+                          <a 
+                            href="https://www.asap-utilities.com/excel-functions.php" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-600 border border-blue-300 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300"
+                          >
+                            <BookOpen className="w-4 h-4 mr-2" />
+                            View All Functions
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
