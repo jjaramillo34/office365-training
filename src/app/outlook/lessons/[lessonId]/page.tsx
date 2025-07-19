@@ -1,23 +1,17 @@
-import { loadLessonContent, loadAllLessons } from "@/lib/content";
+import { loadLessonContentJSON, loadAllLessonsJSON } from "@/lib/content-json";
+import { LessonContent } from "@/lib/content-types";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
-import { CheckCircle, ArrowLeft, ArrowRight, Clock, BookOpen, Target, Lightbulb, AlertCircle, Zap, Star, Info, CheckSquare, ChevronRight, FileText, Users, Settings, Award, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, BookOpen, Target, Lightbulb, AlertCircle, Zap, Star, Info, CheckSquare, ChevronRight, FileText, Users, Settings, Award, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import remarkGfm from 'remark-gfm';
-import remarkEmoji from 'remark-emoji';
-import rehypeHighlight from 'rehype-highlight';
-import rehypeExternalLinks from 'rehype-external-links';
-import rehypeSlug from 'rehype-slug';
+import LessonRenderer from "@/components/LessonRenderer";
 
 // Generate static params for all available lesson IDs
 export async function generateStaticParams() {
   console.log("Generating static params for Outlook lessons...");
   
   try {
-    const lessons = await loadAllLessons("outlook");
-    console.log("Outlook lessons found:", lessons.map(l => l.id));
+    const lessons = await loadAllLessonsJSON("outlook");
+    console.log("Outlook lessons found:", lessons.map((l: any) => l.id));
     
     const params = lessons.map((lesson) => ({
       lessonId: lesson.id,
@@ -44,9 +38,9 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
   
   console.log(`Rendering Outlook lesson page for lessonId: ${lessonId}`);
   
-  let lesson;
+  let lesson: LessonContent | null;
   try {
-    lesson = await loadLessonContent("outlook", lessonId);
+    lesson = await loadLessonContentJSON("outlook", lessonId);
   } catch (error) {
     console.error(`Error loading lesson content for outlook/${lessonId}:`, error);
     lesson = null;
@@ -55,8 +49,8 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
   if (!lesson) {
     console.error(`Lesson not found for outlook/${lessonId}`);
     try {
-      const availableLessons = await loadAllLessons("outlook");
-      console.error(`Available lessons: ${availableLessons.map(l => l.id).join(", ")}`);
+      const availableLessons = await loadAllLessonsJSON("outlook");
+      console.error(`Available lessons: ${availableLessons.map((l: any) => l.id).join(", ")}`);
     } catch (error) {
       console.error("Could not load available lessons:", error);
     }
@@ -65,17 +59,19 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
   
   console.log(`Successfully loaded lesson: ${lesson.title}`);
 
-  // Parse content to extract sections for navigation
-  const sections = lesson.content.split('\n## ').map((section, index) => {
-    if (index === 0) {
-      const lines = section.split('\n');
-      const title = lines[0].replace('# ', '');
-      return { title, content: lines.slice(1).join('\n') };
-    }
-    const lines = section.split('\n');
-    const title = lines[0];
-    return { title, content: lines.slice(1).join('\n') };
-  });
+  // Extract navigation items from sections with defensive programming
+  const navigationItems = lesson.sections
+    .filter((section: any) => section && section.type === 'heading' && section.content) // Only include valid heading sections
+    .map((section: any, index: number) => ({
+      id: `section-${index}`,
+      title: section.content || 'Untitled Section',
+      icon: (section.content && section.content.includes('Best Practices')) ? 'lightbulb' :
+            (section.content && section.content.includes('Troubleshooting')) ? 'alert-circle' :
+            (section.content && section.content.includes('Shortcuts')) ? 'target' :
+            (section.content && section.content.includes('Tips')) ? 'info' :
+            (section.content && section.content.includes('Exercise')) ? 'check-square' :
+            'book-open'
+    }));
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
@@ -97,7 +93,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
               </div>
               <div className="flex items-center text-sm text-orange-600 bg-orange-100 px-3 py-2 rounded-full">
                 <BookOpen size={16} className="mr-2" />
-                {sections.length} sections
+                {lesson.sections.length} sections
               </div>
             </div>
           </div>
@@ -115,16 +111,16 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
                   Lesson Sections
                 </h3>
                 <nav className="space-y-2">
-                  {sections.map((section, index) => (
+                  {navigationItems.map((item, index) => (
                     <div
-                      key={index}
+                      key={item.id}
                       className="w-full text-left px-4 py-3 rounded-xl text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition-all duration-200 cursor-pointer border border-transparent hover:border-orange-200"
                     >
                       <div className="flex items-center">
                         <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center mr-3 text-xs font-bold text-orange-600">
                           {index + 1}
                         </div>
-                        <span className="font-medium">{section.title}</span>
+                        <span className="font-medium">{item.title}</span>
                       </div>
                     </div>
                   ))}
@@ -161,214 +157,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
             </div>
 
             {/* Enhanced Content Sections */}
-            <div className="space-y-8">
-              {sections.map((section, index) => (
-                <div key={index} className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 px-8 py-6 border-b border-gray-100">
-                    <h2 className="text-2xl font-bold text-gray-900 flex items-center">
-                      {section.title.includes('Best Practices') && <Lightbulb size={24} className="mr-3 text-yellow-600" />}
-                      {section.title.includes('Troubleshooting') && <AlertCircle size={24} className="mr-3 text-orange-600" />}
-                      {section.title.includes('Shortcuts') && <Target size={24} className="mr-3 text-green-600" />}
-                      {section.title.includes('Tips') && <Info size={24} className="mr-3 text-blue-600" />}
-                      {section.title.includes('Exercise') && <CheckSquare size={24} className="mr-3 text-purple-600" />}
-                      {!section.title.includes('Best Practices') && !section.title.includes('Troubleshooting') && !section.title.includes('Shortcuts') && !section.title.includes('Tips') && !section.title.includes('Exercise') && <BookOpen size={24} className="mr-3 text-orange-600" />}
-                      {section.title}
-                    </h2>
-                  </div>
-                  <div className="p-8">
-                    <div className="prose prose-lg prose-orange max-w-none">
-                      <ReactMarkdown
-                        remarkPlugins={[remarkGfm, remarkEmoji]}
-                        rehypePlugins={[
-                          rehypeHighlight,
-                          rehypeSlug,
-                          [rehypeExternalLinks, { target: '_blank', rel: 'noopener noreferrer' }]
-                        ]}
-                        components={{
-                          // Enhanced code blocks with syntax highlighting
-                          code({ node, className, children, ...props }: any) {
-                            const match = /language-(\w+)/.exec(className || '');
-                            const isInline = !match;
-                            return !isInline ? (
-                              <div className="my-6">
-                                <SyntaxHighlighter
-                                  style={tomorrow}
-                                  language={match[1]}
-                                  PreTag="div"
-                                  className="rounded-xl shadow-lg"
-                                  {...props}
-                                >
-                                  {String(children).replace(/\n$/, '')}
-                                </SyntaxHighlighter>
-                              </div>
-                            ) : (
-                              <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded-md text-sm font-mono" {...props}>
-                                {children}
-                              </code>
-                            );
-                          },
-                          // Enhanced headings with anchor links
-                          h1: ({ children, id }) => (
-                            <h1 id={id} className="text-3xl font-bold text-gray-900 mb-6 mt-8 border-b border-gray-200 pb-4 group">
-                              {children}
-                              {id && (
-                                <a href={`#${id}`} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-orange-500 hover:text-orange-700">
-                                  #
-                                </a>
-                              )}
-                            </h1>
-                          ),
-                          h2: ({ children, id }) => (
-                            <h2 id={id} className="text-2xl font-bold text-gray-900 mb-4 mt-8 flex items-center group">
-                              <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                              {children}
-                              {id && (
-                                <a href={`#${id}`} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-orange-500 hover:text-orange-700">
-                                  #
-                                </a>
-                              )}
-                            </h2>
-                          ),
-                          h3: ({ children, id }) => (
-                            <h3 id={id} className="text-xl font-semibold text-gray-900 mb-3 mt-6 group">
-                              {children}
-                              {id && (
-                                <a href={`#${id}`} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-orange-500 hover:text-orange-700">
-                                  #
-                                </a>
-                              )}
-                            </h3>
-                          ),
-                          // Enhanced lists
-                          ul: ({ children }) => (
-                            <ul className="space-y-2 my-4">
-                              {children}
-                            </ul>
-                          ),
-                          li: ({ children }) => (
-                            <li className="flex items-start">
-                              <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                              <span>{children}</span>
-                            </li>
-                          ),
-                          // Enhanced blockquotes
-                          blockquote: ({ children }) => (
-                            <blockquote className="border-l-4 border-orange-500 bg-orange-50 pl-6 py-4 my-6 rounded-r-xl italic">
-                              {children}
-                            </blockquote>
-                          ),
-                          // Enhanced tables with better styling
-                          table: ({ children }) => (
-                            <div className="overflow-x-auto my-6">
-                              <table className="min-w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                                {children}
-                              </table>
-                            </div>
-                          ),
-                          th: ({ children }) => (
-                            <th className="bg-gray-50 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200">
-                              {children}
-                            </th>
-                          ),
-                          td: ({ children }) => (
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 border-b border-gray-100">
-                              {children}
-                            </td>
-                          ),
-                          // Enhanced images with better styling
-                          img: ({ src, alt, ...props }: any) => {
-                            // Check if this image is inside a paragraph (inline) or standalone (block)
-                            const isInline = props.node?.parent?.type === 'paragraph';
-                            
-                            if (isInline) {
-                              // For inline images, return just the img element
-                              return (
-                                <img 
-                                  src={src} 
-                                  alt={alt} 
-                                  className="inline-block rounded-lg shadow-md max-w-full h-auto border border-gray-200"
-                                  loading="lazy"
-                                />
-                              );
-                            }
-                            
-                            // For block images, wrap in div
-                            return (
-                              <div className="my-6">
-                                <img 
-                                  src={src} 
-                                  alt={alt} 
-                                  className="rounded-xl shadow-lg max-w-full h-auto mx-auto border border-gray-200"
-                                  loading="lazy"
-                                />
-                                {alt && (
-                                  <p className="text-center text-sm text-gray-500 mt-2 italic">
-                                    {alt}
-                                  </p>
-                                )}
-                              </div>
-                            );
-                          },
-                          // Enhanced paragraphs
-                          p: ({ children }) => (
-                            <p className="text-gray-700 leading-relaxed mb-4">
-                              {children}
-                            </p>
-                          ),
-                          // Enhanced strong text
-                          strong: ({ children }) => (
-                            <strong className="font-bold text-gray-900">
-                              {children}
-                            </strong>
-                          ),
-                          // Enhanced emphasis
-                          em: ({ children }) => (
-                            <em className="italic text-gray-800">
-                              {children}
-                            </em>
-                          ),
-                          // Enhanced links with external link icon
-                          a: ({ href, children }) => {
-                            const isExternal = href?.startsWith('http');
-                            return (
-                              <a 
-                                href={href} 
-                                className="text-orange-600 hover:text-orange-800 underline inline-flex items-center"
-                                target={isExternal ? "_blank" : undefined}
-                                rel={isExternal ? "noopener noreferrer" : undefined}
-                              >
-                                {children}
-                                {isExternal && <ExternalLink size={14} className="ml-1" />}
-                              </a>
-                            );
-                          },
-                          // Enhanced horizontal rules
-                          hr: () => (
-                            <hr className="my-8 border-t border-gray-200" />
-                          ),
-                          // Enhanced task lists (from remark-gfm)
-                          input: ({ checked, type }) => {
-                            if (type === 'checkbox') {
-                              return (
-                                <input 
-                                  type="checkbox" 
-                                  checked={checked} 
-                                  readOnly 
-                                  className="mr-2 mt-1"
-                                />
-                              );
-                            }
-                            return null;
-                          },
-                        }}
-                      >
-                        {section.content}
-                      </ReactMarkdown>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <LessonRenderer lesson={lesson} />
 
             {/* Enhanced Navigation */}
             <div className="mt-12 flex justify-between items-center">

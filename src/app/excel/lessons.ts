@@ -1,4 +1,4 @@
-import { loadAllLessons } from "@/lib/content";
+import { loadAllLessonsJSON } from "@/lib/content-json";
 
 export interface Lesson {
   id: string;
@@ -9,12 +9,21 @@ export interface Lesson {
 
 export async function loadExcelLessons(): Promise<Lesson[]> {
   try {
-    const lessons = await loadAllLessons("excel");
-    return lessons.map(lesson => ({
+    const lessons = await loadAllLessonsJSON("excel");
+    
+    // Define the correct order for lessons
+    const lessonOrder = ['intro', 'formulas', 'charts', 'data-analysis', 'automation', 'bonus'];
+    
+    // Sort lessons according to the defined order
+    const sortedLessons = lessonOrder
+      .map(id => lessons.find(lesson => lesson.id === id))
+      .filter(lesson => lesson !== undefined);
+    
+    return sortedLessons.map((lesson: any) => ({
       id: lesson.id,
       title: lesson.title,
       description: lesson.description,
-      content: lesson.content
+      content: lesson.content || ""
     }));
   } catch (error) {
     console.error("Error loading Excel lessons:", error);

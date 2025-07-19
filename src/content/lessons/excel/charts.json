@@ -1,0 +1,298 @@
+{
+  "id": "charts",
+  "title": "📈 Data Visualization with Charts",
+  "description": "Discover how to create and customize charts for data analysis and professional presentations.",
+  "metadata": {
+    "duration": "15 minutes",
+    "difficulty": "Intermediate",
+    "prerequisites": ["intro", "formulas"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Professional Data Visualization with Excel Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "Effective data visualization is crucial for communicating insights and making data-driven decisions. This comprehensive guide covers everything from basic chart creation to advanced visualization techniques that will transform your data into compelling, professional presentations."
+    },
+    {
+      "type": "heading",
+      "content": "Chart Fundamentals"
+    },
+    {
+      "type": "subheading",
+      "content": "Understanding Chart Components"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Chart area** - The entire chart space",
+          "**Plot area** - Where data is displayed",
+          "**Data series** - Individual data sets",
+          "**Categories** - X-axis labels or groups",
+          "**Values** - Y-axis numerical data",
+          "**Legend** - Explains data series",
+          "**Gridlines** - Reference lines for readability"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Chart Types Overview"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Chart Type", "Best For", "Use Case"],
+        "rows": [
+          ["Column/Bar", "Compare categories", "Sales by region, survey results"],
+          ["Line", "Show trends over time", "Sales trends, growth patterns"],
+          ["Pie/Doughnut", "Show parts of whole", "Market share, budget allocation"],
+          ["Scatter", "Show correlations", "Relationship between variables"],
+          ["Area", "Show volume over time", "Sales volume, resource usage"],
+          ["Combo", "Combine multiple types", "Revenue and growth rate"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Chart Creation Process"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Select data** - Choose relevant data range",
+          "**Insert chart** - Choose appropriate chart type",
+          "**Verify data** - Check data selection",
+          "**Customize** - Modify chart elements",
+          "**Format** - Apply styling and colors",
+          "**Position** - Place chart in worksheet"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Use the 'Recommended Charts' feature in Excel to get suggestions for the best chart type based on your data. This is especially helpful when you're unsure which chart type would work best for your specific data and message."
+    },
+    {
+      "type": "heading",
+      "content": "Chart Types and Applications"
+    },
+    {
+      "type": "subheading",
+      "content": "Column and Bar Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "**Column Charts** are best for comparing categories and discrete data points. Use them when you have a few categories and want to show differences clearly."
+    },
+    {
+      "type": "paragraph",
+      "content": "**Bar Charts** are ideal for horizontal comparisons, especially when you have long category names. They provide better readability for text labels."
+    },
+    {
+      "type": "subheading",
+      "content": "Line Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "Line charts are perfect for showing trends over time, continuous data, and multiple series comparisons. They excel at displaying patterns and forecasting."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Trends over time** - Sales, growth, performance",
+          "**Continuous data** - Temperature, stock prices",
+          "**Multiple series** - Compare trends",
+          "**Forecasting** - Show projections",
+          "**Seasonal patterns** - Identify cycles"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Pie and Doughnut Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "Pie charts are excellent for showing parts of a whole, such as market share or budget allocation. Limit them to 3-7 categories for best readability."
+    },
+    {
+      "type": "paragraph",
+      "content": "Doughnut charts offer more flexibility and can show multiple series with their center space available for titles or totals."
+    },
+    {
+      "type": "subheading",
+      "content": "Scatter Plots"
+    },
+    {
+      "type": "paragraph",
+      "content": "Scatter plots are ideal for correlation analysis, outlier detection, and showing relationships between two variables."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Correlation analysis** - Relationship between variables",
+          "**Outlier detection** - Identify unusual points",
+          "**Trend analysis** - Linear or non-linear patterns",
+          "**Clustering** - Group similar data points",
+          "**Regression** - Show trend lines"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Chart Types"
+    },
+    {
+      "type": "subheading",
+      "content": "Combination Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "Combo charts allow you to combine different chart types to show multiple metrics or different scales on the same chart."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Example: Column chart for revenue + Line chart for growth rate\n// Primary axis: Revenue (columns)\n// Secondary axis: Growth rate (line)\n// This shows both absolute values and trends"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Specialized Charts"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Waterfall Charts** - Show cumulative effect (financial analysis)",
+          "**Gantt Charts** - Project management timelines",
+          "**Funnel Charts** - Sales process, conversion rates",
+          "**Bubble Charts** - Three dimensions of data",
+          "**Radar Charts** - Compare multiple variables"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Chart Design Principles"
+    },
+    {
+      "type": "subheading",
+      "content": "Simplicity"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Remove clutter** - Eliminate unnecessary elements",
+          "**Focus attention** - Highlight important data",
+          "**Clear hierarchy** - Organize information logically",
+          "**White space** - Allow breathing room",
+          "**Consistent style** - Uniform appearance"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Accuracy"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Proper scales** - Start from zero when appropriate",
+          "**Correct data** - Verify data accuracy",
+          "**Appropriate chart type** - Match data characteristics",
+          "**Clear labels** - Descriptive and accurate",
+          "**Source attribution** - Credit data sources"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Create a Sales Dashboard",
+        "description": "Create a combination chart showing monthly sales (columns) and year-over-year growth rate (line) for the past 12 months. Include proper titles, labels, and formatting.",
+        "hint": "Use a combo chart with primary axis for sales and secondary axis for growth rate",
+        "solution": "1. Select your data range\n2. Insert > Combo Chart\n3. Choose 'Clustered Column - Line on Secondary Axis'\n4. Format axes and add titles"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Professional Presentation"
+    },
+    {
+      "type": "subheading",
+      "content": "Chart Integration"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Word documents** - Embed charts for reports",
+          "**PowerPoint presentations** - Use in slides",
+          "**PDF reports** - Include in formal reports",
+          "**Web pages** - Export for web use",
+          "**Print materials** - High-resolution output"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Presentation Tips"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**One chart per slide** - Focus attention",
+          "**Clear titles** - Descriptive chart names",
+          "**Speaker notes** - Explain chart meaning",
+          "**Animation** - Reveal data progressively",
+          "**Handouts** - Provide detailed information"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices Summary"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Plan first** - Define purpose and audience",
+          "**Choose data** - Select relevant information",
+          "**Select chart type** - Match data characteristics",
+          "**Create chart** - Use Excel's chart tools",
+          "**Customize** - Apply formatting and styling",
+          "**Review** - Check accuracy and clarity",
+          "**Refine** - Make improvements",
+          "**Share** - Distribute to stakeholders"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Always test your charts with your intended audience. What makes sense to you might not be clear to others. Get feedback and refine your visualizations accordingly."
+    }
+  ]
+} 

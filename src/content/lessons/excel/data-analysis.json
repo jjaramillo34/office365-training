@@ -1,0 +1,324 @@
+{
+  "id": "data-analysis",
+  "title": "📊 Excel Data Analysis & Advanced Features",
+  "description": "Master advanced Excel techniques for data analysis, including PivotTables, advanced functions, data validation, and professional reporting.",
+  "metadata": {
+    "duration": "60 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "formulas", "charts"]
+  },
+  "sections": [
+    {
+      "type": "paragraph",
+      "content": "Take your Excel skills to the next level with advanced data analysis techniques. Learn how to transform raw data into meaningful insights using PivotTables, advanced functions, and professional reporting tools."
+    },
+    {
+      "type": "heading",
+      "content": "PivotTables: Your Data Analysis Powerhouse"
+    },
+    {
+      "type": "paragraph",
+      "content": "PivotTables are Excel's most powerful data analysis tool, allowing you to summarize, analyze, and present large datasets with ease."
+    },
+    {
+      "type": "subheading",
+      "content": "Creating Your First PivotTable"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Select your data range (including headers)",
+          "Go to Insert > PivotTable",
+          "Choose location (new worksheet recommended)",
+          "Drag fields to Rows, Columns, Values areas",
+          "Customize calculations and formatting"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "PivotTable Best Practices"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Practice", "Description", "Benefit"],
+        "rows": [
+          ["Clean Data", "Remove blank rows/columns", "Accurate analysis"],
+          ["Consistent Formatting", "Use same date/number formats", "Proper grouping"],
+          ["Descriptive Headers", "Clear, unique column names", "Easy field selection"],
+          ["No Merged Cells", "Keep data in individual cells", "Prevent errors"],
+          ["Refresh Regularly", "Update PivotTable after data changes", "Current insights"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Functions for Data Analysis"
+    },
+    {
+      "type": "subheading",
+      "content": "Statistical Functions"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=STDEV(A1:A100)      // Standard deviation\n=VAR(A1:A100)        // Variance\n=PERCENTILE(A1:A100,0.25)  // 25th percentile\n=QUARTILE(A1:A100,1)  // First quartile\n=CORREL(A1:A100,B1:B100)  // Correlation coefficient"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Lookup Functions for Data Matching"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=VLOOKUP(lookup_value, table_array, col_index, FALSE)\n=XLOOKUP(lookup_value, lookup_array, return_array, \"Not found\")\n=INDEX(return_range, MATCH(lookup_value, lookup_range, 0))\n=HLOOKUP(lookup_value, table_array, row_index, FALSE)"
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**XLOOKUP** is the modern replacement for VLOOKUP. It's more flexible, handles errors better, and can search in any direction."
+    },
+    {
+      "type": "heading",
+      "content": "Data Validation & Quality Control"
+    },
+    {
+      "type": "subheading",
+      "content": "Setting Up Data Validation"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Whole Number**: Restrict to integers within a range",
+          "**Decimal**: Allow decimal numbers with limits",
+          "**List**: Create dropdown selections",
+          "**Date**: Ensure valid date entries",
+          "**Time**: Validate time formats",
+          "**Text Length**: Control character count",
+          "**Custom**: Use formulas for complex validation"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Validation Techniques"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Ensure unique values only\n=COUNTIF($A$1:$A$100,A1)=1\n\n// Validate email format\n=AND(ISNUMBER(FIND(\"@\",A1)),ISNUMBER(FIND(\".\",A1)))\n\n// Ensure positive numbers only\n=A1>0\n\n// Validate date is not in the past\n=A1>=TODAY()"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Conditional Formatting for Data Insights"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Conditional Formatting"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Color Scales**: Visualize value ranges with gradients",
+          "**Data Bars**: Show relative values as horizontal bars",
+          "**Icon Sets**: Use symbols to indicate performance",
+          "**Top/Bottom Rules**: Highlight highest/lowest values",
+          "**Custom Formulas**: Create complex formatting rules"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Custom Conditional Formatting Examples"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Highlight cells above average\n=A1>AVERAGE($A$1:$A$100)\n\n// Color-code based on multiple conditions\n=AND(A1>100,B1=\"High Priority\")\n\n// Highlight weekends\n=WEEKDAY(A1,2)>5\n\n// Show overdue items\n=AND(A1<TODAY(),B1=\"Pending\")"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Charting Techniques"
+    },
+    {
+      "type": "subheading",
+      "content": "Combination Charts"
+    },
+    {
+      "type": "paragraph",
+      "content": "Combine different chart types to show multiple data series effectively."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Select your data range",
+          "Insert > Recommended Charts",
+          "Choose 'Combo' chart type",
+          "Customize each series independently",
+          "Add secondary axis if needed"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Dynamic Charts with Named Ranges"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Create dynamic named range\n=OFFSET(Sheet1!$A$1,0,0,COUNTA(Sheet1!$A:$A),1)\n\n// Use in chart data source\n=Sheet1!DynamicRange\n\n// Auto-update when data changes\n// No manual chart updates needed"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Data Analysis Tools"
+    },
+    {
+      "type": "subheading",
+      "content": "Goal Seek & Solver"
+    },
+    {
+      "type": "paragraph",
+      "content": "Use Excel's built-in optimization tools to find solutions to complex problems."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Goal Seek**: Find input value for desired result",
+          "**Solver**: Optimize multiple variables with constraints",
+          "**Scenario Manager**: Compare different scenarios",
+          "**Data Tables**: Analyze multiple input combinations"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Sales Analysis Dashboard",
+        "description": "Create a comprehensive sales analysis dashboard using PivotTables, advanced functions, and conditional formatting.",
+        "steps": [
+          "Import sales data with multiple columns (Date, Product, Region, Sales, Cost)",
+          "Create a PivotTable to summarize sales by region and product",
+          "Add calculated fields for profit margin and growth rates",
+          "Apply conditional formatting to highlight top performers",
+          "Create a combination chart showing sales trends and profit margins",
+          "Add data validation to ensure data quality for new entries"
+        ],
+        "checklist": [
+          "PivotTable shows meaningful insights",
+          "Calculated fields work correctly",
+          "Conditional formatting highlights key data",
+          "Chart effectively communicates trends",
+          "Data validation prevents errors",
+          "Dashboard is professional and readable"
+        ],
+        "estimatedTime": "45 minutes",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Professional Reporting"
+    },
+    {
+      "type": "subheading",
+      "content": "Creating Executive Dashboards"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**KPI Cards**: Highlight key performance indicators",
+          "**Trend Charts**: Show performance over time",
+          "**Comparison Tables**: Side-by-side analysis",
+          "**Summary PivotTables**: Top-level insights",
+          "**Action Items**: Next steps and recommendations"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Dashboard Design Principles"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Principle", "Description", "Example"],
+        "rows": [
+          ["**Clarity**", "Easy to understand at a glance", "Clear titles, simple charts"],
+          ["**Consistency**", "Uniform formatting throughout", "Same color scheme, fonts"],
+          ["**Relevance**", "Show only important information", "Focus on key metrics"],
+          ["**Accuracy**", "Ensure data is correct", "Verify formulas, refresh data"],
+          ["**Actionable**", "Enable decision-making", "Include trends, comparisons"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices for Data Analysis"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Start with clean data** - Remove duplicates, fix errors",
+          "**Document your analysis** - Include assumptions and methodology",
+          "**Use appropriate visualizations** - Match chart type to data",
+          "**Validate your findings** - Cross-check with multiple methods",
+          "**Keep it simple** - Avoid over-complicating your analysis",
+          "**Update regularly** - Maintain current data and insights"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Pro Tip**: Always create a backup of your original data before performing complex analysis. Use version control or save multiple copies with different names."
+    },
+    {
+      "type": "heading",
+      "content": "Next Steps"
+    },
+    {
+      "type": "paragraph",
+      "content": "In the next course, you'll learn:"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Excel Automation** - Macros and VBA programming",
+          "**Advanced Formulas** - Array formulas and dynamic arrays",
+          "**Power Query** - Data transformation and cleaning",
+          "**Power Pivot** - Advanced data modeling",
+          "**Collaboration Tools** - Sharing and protecting workbooks"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Remember**: Data analysis is both an art and a science. Practice regularly with real data to develop your analytical intuition and technical skills."
+    }
+  ]
+} 

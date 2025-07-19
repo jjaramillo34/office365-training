@@ -1,0 +1,473 @@
+{
+  "id": "bonus",
+  "title": "🚀 Bonus: Outlook Power User Features",
+  "description": "Unlock advanced Outlook features including automation, integration, security, and productivity tools for power users.",
+  "metadata": {
+    "duration": "20 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "calendar", "organization"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Outlook Power User Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "Unlock the full potential of Outlook with these advanced features and educator-focused tips. From automation to integration, discover tools that will transform your productivity and make you an Outlook power user."
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Automation"
+    },
+    {
+      "type": "subheading",
+      "content": "Macros and VBA"
+    },
+    {
+      "type": "paragraph",
+      "content": "Outlook macros automate repetitive tasks and can significantly improve your productivity by handling complex email operations."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Email processing** - Automate email responses",
+          "**Calendar management** - Bulk calendar operations",
+          "**Contact management** - Update contact information",
+          "**Report generation** - Create email analytics",
+          "**Data export** - Export Outlook data to other formats"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Power Automate Integration"
+    },
+    {
+      "type": "paragraph",
+      "content": "Power Automate (formerly Flow) connects Outlook with hundreds of other services for advanced automation scenarios."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Email to SharePoint** - Save attachments automatically",
+          "**Meeting follow-ups** - Send reminders after meetings",
+          "**Approval workflows** - Route emails for approval",
+          "**Data synchronization** - Sync with external systems",
+          "**Notification systems** - Alert teams of important emails"
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "outlook",
+        "code": "// Example: Auto-save attachments to OneDrive\n// Trigger: New email with attachment\n// Action: Save attachment to OneDrive\n// Condition: From specific senders\n// Result: Automatic file organization"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Email Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Conditional Formatting"
+    },
+    {
+      "type": "paragraph",
+      "content": "Apply advanced formatting rules to automatically highlight and organize emails based on content and sender."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Sender-based formatting** - Color-code by sender",
+          "**Content-based highlighting** - Highlight specific keywords",
+          "**Priority indicators** - Visual priority markers",
+          "**Size-based formatting** - Highlight large emails",
+          "**Date-based formatting** - Age-based color coding"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Search and Filters"
+    },
+    {
+      "type": "paragraph",
+      "content": "Master Outlook's advanced search capabilities to find emails quickly and efficiently."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "outlook",
+        "code": "// Advanced Search Operators\n// hasattachment:yes AND size:>1MB\n// received:this week AND from:boss@company.com\n// subject:meeting AND body:agenda\n// flag:followup AND category:important\n// sent:yesterday AND to:team@company.com"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Calendar Power Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Calendar Analytics"
+    },
+    {
+      "type": "paragraph",
+      "content": "Use Outlook's calendar analytics to understand your time usage and optimize your schedule."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Meeting analysis** - Track meeting frequency and duration",
+          "**Time distribution** - Analyze how you spend your time",
+          "**Productivity insights** - Identify peak productivity hours",
+          "**Meeting effectiveness** - Evaluate meeting outcomes",
+          "**Schedule optimization** - Find time for focused work"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Scheduling"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Scheduling polls** - Let attendees vote on meeting times",
+          "**Recurring meeting variations** - Complex recurrence patterns",
+          "**Time zone management** - Handle global teams",
+          "**Resource booking** - Reserve rooms and equipment",
+          "**Meeting templates** - Standardize meeting formats"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Create a Meeting Template",
+        "description": "Create a comprehensive meeting template with agenda structure, time allocations, and follow-up actions for team meetings.",
+        "hint": "Use appointment templates and include standard agenda items",
+        "solution": "1. Create new appointment\n2. Add standard agenda items\n3. Set time allocations\n4. Include follow-up section\n5. Save as template"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Integration and Connectivity"
+    },
+    {
+      "type": "subheading",
+      "content": "Microsoft 365 Integration"
+    },
+    {
+      "type": "paragraph",
+      "content": "Leverage Outlook's deep integration with other Microsoft 365 applications for seamless workflows."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**OneDrive integration** - Save and share files directly",
+          "**Teams integration** - Convert emails to Teams conversations",
+          "**SharePoint sync** - Access team documents",
+          "**Power BI integration** - Email analytics and reports",
+          "**Forms integration** - Create and send surveys"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Third-Party Integrations"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**CRM systems** - Connect with Salesforce, Dynamics",
+          "**Project management** - Link with Asana, Trello",
+          "**Document signing** - Integrate with DocuSign",
+          "**Video conferencing** - Connect with Zoom, Teams",
+          "**Social media** - Share to LinkedIn, Twitter"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Security and Compliance"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Security Features"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Encryption** - End-to-end email encryption",
+          "**Digital signatures** - Verify email authenticity",
+          "**Information Rights Management** - Control email access",
+          "**Data Loss Prevention** - Prevent sensitive data leaks",
+          "**Advanced threat protection** - Block malicious content"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Compliance and Archiving"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Legal hold** - Preserve emails for legal purposes",
+          "**E-discovery** - Search archived emails",
+          "**Retention policies** - Automatic email lifecycle management",
+          "**Audit logging** - Track email access and changes",
+          "**Compliance reporting** - Generate compliance reports"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Mobile and Remote Work"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Mobile Features"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Offline access** - Work without internet connection",
+          "**Push notifications** - Real-time email alerts",
+          "**Voice commands** - Control Outlook by voice",
+          "**Location services** - Add location to appointments",
+          "**Mobile-specific gestures** - Swipe actions and shortcuts"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Remote Work Optimization"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Virtual meeting integration** - One-click meeting joins",
+          "**Screen sharing** - Share screen during calls",
+          "**Background blur** - Professional video calls",
+          "**Meeting recording** - Record important meetings",
+          "**Collaboration tools** - Real-time document editing"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Productivity Tools"
+    },
+    {
+      "type": "subheading",
+      "content": "MyAnalytics Integration"
+    },
+    {
+      "type": "paragraph",
+      "content": "MyAnalytics provides insights into your work patterns and suggests improvements for better productivity."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Focus time** - Track uninterrupted work time",
+          "**Meeting insights** - Analyze meeting effectiveness",
+          "**Network analysis** - Understand your work relationships",
+          "**Productivity trends** - Track productivity over time",
+          "**Wellbeing insights** - Monitor work-life balance"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Quick Steps"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create custom Quick Steps that combine multiple actions for complex workflows."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "outlook",
+        "code": "// Custom Quick Step Examples\n// 1. Reply, Categorize, and Move\n// 2. Forward to Team and Archive\n// 3. Create Task and Flag for Follow-up\n// 4. Send to OneNote and Delete\n// 5. Add to Calendar and Mark Complete"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Data Management"
+    },
+    {
+      "type": "subheading",
+      "content": "PST File Management"
+    },
+    {
+      "type": "paragraph",
+      "content": "Effectively manage Outlook data files for optimal performance and organization."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Archive old data** - Move old emails to archive",
+          "**Compact PST files** - Reduce file size",
+          "**Split large files** - Manage oversized PST files",
+          "**Backup strategies** - Regular data backup",
+          "**Recovery procedures** - Restore from backup"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Data Export and Import"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Export to Excel** - Email data analysis",
+          "**Import from CSV** - Bulk contact import",
+          "**Calendar export** - Share calendar data",
+          "**Email migration** - Move between accounts",
+          "**Backup to cloud** - Cloud-based backup"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Educator-Specific Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Class Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Student email groups** - Organize by class",
+          "**Assignment tracking** - Email-based assignment management",
+          "**Parent communication** - Professional parent emails",
+          "**Grade notifications** - Automated grade emails",
+          "**Event coordination** - School event management"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Professional Development"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Conference management** - Professional development events",
+          "**Collaboration tools** - Team teaching coordination",
+          "**Resource sharing** - Educational material distribution",
+          "**Mentoring programs** - Mentor-mentee communication",
+          "**Professional networks** - Connect with colleagues"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Final Project: Comprehensive Outlook System",
+        "description": "Set up a complete Outlook system with automation, organization, and integration features tailored to your specific workflow.",
+        "hint": "Combine multiple advanced features: rules, Quick Steps, categories, and integrations",
+        "solution": "1. Set up folder structure and rules\n2. Create custom Quick Steps\n3. Configure categories and conditional formatting\n4. Set up integrations with other tools\n5. Establish backup and maintenance routines"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Performance Optimization"
+    },
+    {
+      "type": "subheading",
+      "content": "Speed and Efficiency"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Disable unnecessary add-ins** - Reduce startup time",
+          "**Optimize search indexing** - Faster search results",
+          "**Manage sync settings** - Control data synchronization",
+          "**Regular maintenance** - Clean up and compact files",
+          "**Hardware acceleration** - Use GPU for better performance"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Storage Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Monitor mailbox size** - Stay within limits",
+          "**Archive regularly** - Move old data to archive",
+          "**Clean attachments** - Remove unnecessary files",
+          "**Use cloud storage** - Store large files in OneDrive",
+          "**Compress data** - Reduce storage requirements"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices Summary"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Start simple** - Master basics before advanced features",
+          "**Automate wisely** - Don't over-automate",
+          "**Secure your data** - Use encryption and backup",
+          "**Stay organized** - Maintain folder and category systems",
+          "**Integrate effectively** - Connect with other tools",
+          "**Monitor performance** - Regular maintenance and optimization",
+          "**Learn continuously** - Stay updated with new features",
+          "**Share knowledge** - Help others improve their productivity"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Remember that the goal of Outlook power features is to save time and improve productivity. Focus on features that address your specific pain points and workflow needs rather than trying to use every available feature."
+    }
+  ]
+} 

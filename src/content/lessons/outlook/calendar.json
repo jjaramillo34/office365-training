@@ -1,0 +1,408 @@
+{
+  "id": "calendar",
+  "title": "📅 Calendar Management",
+  "description": "Learn how to schedule meetings, set reminders, and manage your calendar effectively for better time management.",
+  "metadata": {
+    "duration": "15 minutes",
+    "difficulty": "Intermediate",
+    "prerequisites": ["intro"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Advanced Calendar Management in Outlook"
+    },
+    {
+      "type": "paragraph",
+      "content": "Effective calendar management is essential for professional success. This comprehensive guide covers everything from basic scheduling to advanced calendar features that will transform how you manage your time and coordinate with others."
+    },
+    {
+      "type": "heading",
+      "content": "Calendar Fundamentals"
+    },
+    {
+      "type": "subheading",
+      "content": "Understanding Calendar Views"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["View", "Best For", "Features"],
+        "rows": [
+          ["Day View", "Detailed daily schedule", "Hour-by-hour breakdown, appointment details"],
+          ["Week View", "Weekly planning", "Multi-day planning, time patterns"],
+          ["Month View", "Long-term planning", "Monthly patterns, holiday awareness"],
+          ["Work Week", "Business focus", "Monday-Friday, professional scheduling"]
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Calendar Navigation"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Today button** - Quick return to current date",
+          "**Date picker** - Jump to specific dates",
+          "**Previous/Next** - Navigate between periods",
+          "**Go to date** - Direct date navigation",
+          "**Keyboard shortcuts** - Efficient navigation"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Creating and Managing Appointments"
+    },
+    {
+      "type": "subheading",
+      "content": "Appointment Creation Process"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**New Appointment (Ctrl+N)** - Start appointment creation",
+          "**Subject line** - Clear, descriptive title",
+          "**Location** - Physical or virtual meeting place",
+          "**Start time** - Precise start time",
+          "**End time** - Appropriate duration",
+          "**All day events** - Full-day activities"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Appointment Options"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Recurrence** - Repeat appointments",
+          "**Reminders** - Notification settings",
+          "**Categories** - Color coding",
+          "**Private** - Confidential appointments",
+          "**Busy/Free** - Availability status"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Use the 'Scheduling Assistant' when creating meetings to find the best time that works for all attendees. It shows everyone's availability and suggests optimal meeting times."
+    },
+    {
+      "type": "heading",
+      "content": "Recurring Appointments"
+    },
+    {
+      "type": "subheading",
+      "content": "Recurrence Patterns"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Pattern", "Use Case", "Example"],
+        "rows": [
+          ["Daily", "Regular daily activities", "Morning check-ins"],
+          ["Weekly", "Weekly meetings", "Team standups"],
+          ["Monthly", "Monthly reviews", "Board meetings"],
+          ["Yearly", "Annual events", "Performance reviews"],
+          ["Custom", "Irregular patterns", "Bi-weekly training"]
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Recurrence Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Edit series** - Change all occurrences",
+          "**Edit occurrence** - Change single instance",
+          "**Delete series** - Remove all instances",
+          "**Delete occurrence** - Remove single instance",
+          "**Recurrence exceptions** - Handle special cases"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Meeting Scheduling and Coordination"
+    },
+    {
+      "type": "subheading",
+      "content": "Scheduling Meetings with Others"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**New Meeting (Ctrl+Shift+Q)** - Create meeting invitation",
+          "**Attendee selection** - Add meeting participants",
+          "**Scheduling Assistant** - Find best meeting time",
+          "**Room finder** - Locate available meeting rooms",
+          "**Resource booking** - Reserve equipment"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Scheduling Assistant Features"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Availability view** - See attendee schedules",
+          "**Best time suggestions** - Optimal meeting times",
+          "**Conflict detection** - Identify scheduling conflicts",
+          "**Time zone handling** - Coordinate across time zones",
+          "**Meeting duration** - Appropriate time allocation"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Meeting Management"
+    },
+    {
+      "type": "subheading",
+      "content": "Meeting Details"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Agenda** - Clear meeting objectives",
+          "**Materials** - Pre-meeting documents",
+          "**Location details** - Meeting room information",
+          "**Virtual meeting** - Online meeting links",
+          "**Contact information** - Organizer details"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Attendee Management"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Response", "Meaning", "Action"],
+        "rows": [
+          ["Accept", "Will attend", "Add to calendar"],
+          ["Decline", "Cannot attend", "Remove from calendar"],
+          ["Tentative", "May attend", "Mark as tentative"],
+          ["No response", "Haven't replied", "Send reminder"]
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Schedule a Team Meeting",
+        "description": "Create a recurring weekly team meeting for 10 people, including an agenda, materials, and proper reminder settings. Use the Scheduling Assistant to find the best time.",
+        "hint": "Use the Scheduling Assistant to see everyone's availability and choose a time with minimal conflicts",
+        "solution": "1. New Meeting (Ctrl+Shift+Q)\n2. Add all attendees\n3. Use Scheduling Assistant\n4. Set recurrence to weekly\n5. Add agenda and materials\n6. Set 15-minute reminder"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Calendar Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Calendar Sharing and Permissions"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Permission Level", "Access", "Use Case"],
+        "rows": [
+          ["View only", "Read access", "Share with colleagues"],
+          ["Reviewer", "Comment access", "Team feedback"],
+          ["Editor", "Full edit access", "Assistant or delegate"],
+          ["Delegate", "Manage on your behalf", "Executive assistant"]
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Calendar Integration"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Email to calendar** - Convert emails to appointments",
+          "**Meeting requests** - Process meeting invitations",
+          "**Calendar links** - Share calendar information",
+          "**Email reminders** - Calendar notifications",
+          "**Follow-up tracking** - Meeting action items"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Calendar Customization"
+    },
+    {
+      "type": "subheading",
+      "content": "Display Options"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Color coding** - Visual organization",
+          "**Font settings** - Readability customization",
+          "**Time scale** - Adjust time intervals",
+          "**Working hours** - Define business hours",
+          "**Holiday calendar** - Include holidays"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Categories and Organization"
+    },
+    {
+      "type": "paragraph",
+      "content": "Use categories to organize your appointments by type, priority, or project. This helps you quickly identify and manage different types of activities."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "outlook",
+        "code": "// Common Calendar Categories\n// Red: Important meetings\n// Blue: Regular appointments\n// Green: Personal time\n// Yellow: Travel\n// Purple: Project work\n// Orange: Deadlines"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Time Management Strategies"
+    },
+    {
+      "type": "subheading",
+      "content": "Blocking Time"
+    },
+    {
+      "type": "paragraph",
+      "content": "Block time in your calendar for focused work, preparation, and breaks. This ensures you have dedicated time for important tasks."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Focus blocks** - Dedicated work time",
+          "**Preparation time** - Meeting preparation",
+          "**Travel time** - Between appointments",
+          "**Break time** - Rest and recovery",
+          "**Buffer time** - Unexpected delays"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Calendar Hygiene"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Review daily** - Check next day's schedule",
+          "**Update regularly** - Keep appointments current",
+          "**Clean up** - Remove outdated items",
+          "**Backup** - Export important events",
+          "**Archive** - Move old items to archive"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Mobile Calendar Management"
+    },
+    {
+      "type": "subheading",
+      "content": "Outlook Mobile App"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Sync automatically** - Real-time updates",
+          "**Quick add** - Fast appointment creation",
+          "**Location services** - Add location automatically",
+          "**Voice commands** - Create appointments by voice",
+          "**Offline access** - View calendar without internet"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Mobile Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Quick responses** - Respond to meeting requests promptly",
+          "**Location sharing** - Share location for meetings",
+          "**Travel time** - Account for travel between appointments",
+          "**Notifications** - Set appropriate reminder times",
+          "**Battery management** - Optimize for all-day use"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Create a Weekly Schedule Template",
+        "description": "Set up a weekly schedule template with blocked time for different activities: focused work, meetings, breaks, and preparation time.",
+        "hint": "Use recurring appointments and different categories to create a structured weekly template",
+        "solution": "1. Create recurring appointments for each activity type\n2. Use different categories for visual organization\n3. Set appropriate durations and times\n4. Add reminders for transitions\n5. Make appointments private if needed"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices Summary"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Plan ahead** - Review and plan your week",
+          "**Be realistic** - Don't over-schedule",
+          "**Use categories** - Organize visually",
+          "**Set reminders** - Don't miss important events",
+          "**Block time** - Reserve time for focused work",
+          "**Review regularly** - Keep calendar current",
+          "**Share appropriately** - Control access levels",
+          "**Backup important events** - Export critical appointments"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Create a daily email processing routine that includes specific times for checking email, processing responses, and organizing your inbox. This structured approach will significantly improve your email productivity and reduce stress."
+    }
+  ]
+} 

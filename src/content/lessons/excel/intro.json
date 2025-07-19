@@ -1,0 +1,173 @@
+{
+  "id": "intro",
+  "title": "📊 Introduction to Microsoft Excel",
+  "description": "Learn the fundamentals of Microsoft Excel, the world's most popular spreadsheet application. Master basic operations and start creating powerful spreadsheets.",
+  "metadata": {
+    "duration": "25 minutes",
+    "difficulty": "Beginner",
+    "prerequisites": []
+  },
+  "sections": [
+    {
+      "type": "paragraph",
+      "content": "Microsoft Excel is a powerful spreadsheet application used for data analysis, calculations, and creating professional reports. In this lesson, you'll learn the essential skills to get started with Excel."
+    },
+    {
+      "type": "heading",
+      "content": "Learning Objectives"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "Understand the Excel interface and basic navigation",
+          "Learn to enter and edit data in cells",
+          "Master basic formatting techniques",
+          "Create simple formulas and calculations",
+          "Save and manage Excel files"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Getting Started with Excel"
+    },
+    {
+      "type": "subheading",
+      "content": "Opening Excel"
+    },
+    {
+      "type": "paragraph",
+      "content": "There are several ways to open Microsoft Excel depending on your setup."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**From Start Menu**: Click Start and search for Excel",
+          "**From Desktop**: Double-click the Excel icon",
+          "**From Office.com**: Visit office.com and launch Excel Online"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Understanding the Interface"
+    },
+    {
+      "type": "paragraph",
+      "content": "Familiarize yourself with the main components of the Excel interface."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Component", "Description"],
+        "rows": [
+          ["**Ribbon**", "Tabs with commands organized by function"],
+          ["**Formula Bar**", "Shows cell contents and formulas"],
+          ["**Worksheet**", "Grid where you enter data"],
+          ["**Status Bar**", "Displays information about selected cells"],
+          ["**Name Box**", "Shows the address of the active cell"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Basic Operations"
+    },
+    {
+      "type": "subheading",
+      "content": "Entering Data"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn how to enter different types of data in Excel cells."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Text**: Click a cell and type",
+          "**Numbers**: Enter numerical values",
+          "**Dates**: Use date formats (MM/DD/YYYY)",
+          "**Formulas**: Start with = sign"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Keyboard Shortcuts"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Shortcut", "Action"],
+        "rows": [
+          ["`Ctrl + C`", "Copy"],
+          ["`Ctrl + V`", "Paste"],
+          ["`Ctrl + X`", "Cut"],
+          ["`Ctrl + Z`", "Undo"],
+          ["`Ctrl + S`", "Save"],
+          ["`F2`", "Edit cell"],
+          ["`Enter`", "Move down"],
+          ["`Tab`", "Move right"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Practice Exercise"
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Create Your First Spreadsheet",
+        "description": "Practice your new Excel skills by creating a simple budget spreadsheet.",
+        "steps": [
+          "Open Excel and create a new workbook",
+          "Enter column headers: Item, Cost, Quantity, Total",
+          "Add some sample data (e.g., Coffee, $3.50, 2)",
+          "Create a formula to calculate totals",
+          "Format the spreadsheet with basic styling",
+          "Save the file with a descriptive name"
+        ],
+        "checklist": [
+          "Headers are clearly formatted",
+          "Sample data is entered correctly",
+          "Formula calculates totals properly",
+          "File is saved with appropriate name",
+          "Spreadsheet looks professional"
+        ],
+        "estimatedTime": "15 minutes",
+        "difficulty": "beginner"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Next Steps"
+    },
+    {
+      "type": "paragraph",
+      "content": "In the next lesson, you'll learn:"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Formulas and Functions** - Advanced calculations",
+          "**Data Formatting** - Making spreadsheets look professional",
+          "**Charts and Graphs** - Visualizing your data",
+          "**Data Management** - Sorting and filtering"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Remember**: Practice regularly to become comfortable with Excel!"
+    }
+  ]
+} 

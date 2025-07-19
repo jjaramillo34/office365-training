@@ -1,0 +1,425 @@
+{
+  "id": "automation",
+  "title": "⚡ Excel Automation & Productivity",
+  "description": "Learn to automate repetitive tasks, create macros, use advanced formulas, and leverage Excel's productivity features to work smarter, not harder.",
+  "metadata": {
+    "duration": "60 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "formulas", "charts", "data-analysis"]
+  },
+  "sections": [
+    {
+      "type": "paragraph",
+      "content": "Transform your Excel workflow with automation techniques that save hours of manual work. Learn to create macros, use advanced formulas, and implement productivity-boosting features that make you an Excel power user."
+    },
+    {
+      "type": "heading",
+      "content": "Macro Basics: Recording Your First Macro"
+    },
+    {
+      "type": "paragraph",
+      "content": "Macros are automated sequences of actions that can be replayed with a single click, saving you time on repetitive tasks."
+    },
+    {
+      "type": "subheading",
+      "content": "Setting Up the Developer Tab"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Right-click on the ribbon and select 'Customize the Ribbon'",
+          "Check the 'Developer' tab in the right column",
+          "Click OK to add the Developer tab to your ribbon",
+          "The Developer tab now contains macro tools and VBA editor"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Recording a Simple Macro"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Go to Developer > Record Macro",
+          "Name your macro (no spaces, start with letter)",
+          "Choose shortcut key (optional)",
+          "Select 'This Workbook' for storage",
+          "Add description of what the macro does",
+          "Click OK and perform your actions",
+          "Click 'Stop Recording' when done"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Best Practice**: Always test your macros on a copy of your data first. Macros can't be undone with Ctrl+Z!"
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Formulas for Automation"
+    },
+    {
+      "type": "subheading",
+      "content": "Dynamic Array Functions (Excel 365+)"
+    },
+    {
+      "type": "paragraph",
+      "content": "Dynamic arrays automatically spill results across multiple cells, eliminating the need for complex array formulas."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=SORT(A2:A100)           // Sort data automatically\n=FILTER(A2:C100,B2:B100>100)  // Filter with conditions\n=UNIQUE(A2:A100)          // Remove duplicates\n=SEQUENCE(10)             // Generate sequence 1-10\n=RANDARRAY(5,5)           // Random 5x5 array"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Powerful Text Functions"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=TEXTJOIN(\" \",TRUE,A1:A10)  // Join text with separator\n=CONCAT(A1:A10)           // Simple concatenation\n=LEFT(A1,5)               // First 5 characters\n=RIGHT(A1,3)              // Last 3 characters\n=MID(A1,2,4)              // 4 chars starting at position 2\n=SUBSTITUTE(A1,\"old\",\"new\")  // Replace text"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Date and Time Automation"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=TODAY()                  // Current date\n=NOW()                    // Current date and time\n=WORKDAY(A1,5)            // 5 workdays from A1\n=NETWORKDAYS(A1,B1)       // Workdays between dates\n=EOMONTH(A1,0)            // End of month for A1\n=EDATE(A1,3)              // 3 months from A1"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Power Query: Data Transformation Automation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Power Query is Excel's powerful data transformation tool that can clean, reshape, and combine data from multiple sources."
+    },
+    {
+      "type": "subheading",
+      "content": "Getting Started with Power Query"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Select your data range",
+          "Go to Data > From Table/Range",
+          "Power Query Editor opens",
+          "Use the ribbon to transform data",
+          "Click 'Close & Load' to return to Excel"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Common Power Query Transformations"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Transformation", "Purpose", "When to Use"],
+        "rows": [
+          ["**Remove Duplicates**", "Clean data", "After importing data"],
+          ["**Split Columns**", "Separate combined data", "Addresses, names, etc."],
+          ["**Merge Columns**", "Combine related data", "Creating full names"],
+          ["**Change Data Types**", "Ensure correct formats", "Dates, numbers, text"],
+          ["**Add Conditional Column**", "Create calculated fields", "Categories, flags"],
+          ["**Pivot/Unpivot**", "Reshape data structure", "Wide to long format"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced VBA Programming"
+    },
+    {
+      "type": "subheading",
+      "content": "Understanding VBA Structure"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "vba",
+        "code": "Sub MyMacro()\n    ' This is a comment\n    Dim ws As Worksheet\n    Dim rng As Range\n    \n    ' Set references\n    Set ws = ThisWorkbook.Sheets(\"Sheet1\")\n    Set rng = ws.Range(\"A1:A10\")\n    \n    ' Perform actions\n    rng.Value = \"Hello World\"\n    rng.Font.Bold = True\n    \nEnd Sub"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Essential VBA Concepts"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Variables**: Store data (Dim, String, Integer, etc.)",
+          "**Objects**: Work with Excel elements (Worksheet, Range, etc.)",
+          "**Properties**: Characteristics of objects (.Value, .Font, etc.)",
+          "**Methods**: Actions objects can perform (.Select, .Copy, etc.)",
+          "**Loops**: Repeat actions (For...Next, Do...Loop)",
+          "**Conditions**: Make decisions (If...Then, Select Case)"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Practical VBA Examples"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "vba",
+        "code": "' Format all cells in a range\nSub FormatRange()\n    Dim rng As Range\n    Set rng = Selection\n    \n    With rng\n        .Font.Bold = True\n        .Interior.Color = RGB(255, 255, 0)\n        .Borders.LineStyle = xlContinuous\n    End With\nEnd Sub\n\n' Loop through worksheets\nSub ProcessAllSheets()\n    Dim ws As Worksheet\n    \n    For Each ws In ThisWorkbook.Worksheets\n        ws.Range(\"A1\").Value = \"Processed\"\n    Next ws\nEnd Sub"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Productivity Features & Shortcuts"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Keyboard Shortcuts"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Shortcut", "Action", "Use Case"],
+        "rows": [
+          ["`Ctrl + Shift + L`", "Toggle filters", "Quick data filtering"],
+          ["`Ctrl + T`", "Create table", "Convert range to table"],
+          ["`Ctrl + Shift + T`", "Insert table", "Alternative table creation"],
+          ["`Alt + F1`", "Create chart", "Quick chart from selection"],
+          ["`F4`", "Repeat last action", "Apply same formatting"],
+          ["`Ctrl + Shift + Enter`", "Array formula", "Enter array formulas"],
+          ["`Alt + =`", "AutoSum", "Quick sum selection"],
+          ["`Ctrl + Shift + ;`", "Current time", "Insert timestamp"]
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Excel Tables for Automation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Excel tables automatically expand, include built-in filtering, and work seamlessly with formulas and charts."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Auto-expansion**: Tables grow with new data",
+          "**Structured references**: Use column names in formulas",
+          "**Built-in filtering**: Automatic filter buttons",
+          "**Total row**: Easy subtotals and calculations",
+          "**Style options**: Professional formatting",
+          "**Chart integration**: Charts update automatically"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Template Creation & Management"
+    },
+    {
+      "type": "subheading",
+      "content": "Building Reusable Templates"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Design your template with placeholders",
+          "Add data validation for user input",
+          "Create named ranges for easy reference",
+          "Add instructions and help text",
+          "Protect important cells and formulas",
+          "Save as .xltx template file",
+          "Test with sample data"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Template Best Practices"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Practice", "Description", "Benefit"],
+        "rows": [
+          ["**Clear Instructions**", "Include help text and examples", "Reduces user errors"],
+          ["**Data Validation**", "Restrict input to valid values", "Maintains data quality"],
+          ["**Named Ranges**", "Use descriptive names", "Easier formula writing"],
+          ["**Consistent Formatting**", "Professional appearance", "Brand consistency"],
+          ["**Error Handling**", "Graceful error messages", "Better user experience"],
+          ["**Version Control**", "Track template changes", "Easy updates and rollbacks"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Collaboration & Sharing"
+    },
+    {
+      "type": "subheading",
+      "content": "Workbook Protection"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Sheet Protection**: Prevent accidental changes",
+          "**Workbook Protection**: Control structure changes",
+          "**Cell Locking**: Protect specific cells",
+          "**Password Protection**: Secure sensitive data",
+          "**Read-only Mode**: Share without editing",
+          "**Track Changes**: Monitor modifications"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Sharing Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Use OneDrive/SharePoint** for real-time collaboration",
+          "**Set appropriate permissions** for different users",
+          "**Include clear documentation** and instructions",
+          "**Test shared workbooks** before distribution",
+          "**Maintain version control** with clear naming",
+          "**Provide training** for complex workbooks"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Automated Report Generator",
+        "description": "Create a comprehensive automated reporting system using macros, Power Query, and advanced formulas.",
+        "steps": [
+          "Create a data source with sales information",
+          "Use Power Query to clean and transform the data",
+          "Build a PivotTable for analysis",
+          "Create a macro to refresh data and update charts",
+          "Add conditional formatting for key metrics",
+          "Protect the workbook and add user instructions",
+          "Test the automation with different scenarios"
+        ],
+        "checklist": [
+          "Data transformation works automatically",
+          "Macro refreshes all components correctly",
+          "Charts update with new data",
+          "Conditional formatting highlights insights",
+          "Workbook is protected and user-friendly",
+          "Documentation is clear and complete"
+        ],
+        "estimatedTime": "60 minutes",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Performance Optimization"
+    },
+    {
+      "type": "subheading",
+      "content": "Speed Up Your Workbooks"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Minimize volatile functions** (NOW, RAND, OFFSET)",
+          "**Use efficient formulas** (avoid nested IFs)",
+          "**Limit array formulas** in large datasets",
+          "**Disable automatic calculations** during heavy work",
+          "**Clean up unused data** and hidden sheets",
+          "**Use tables instead of ranges** for better performance"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Memory Management"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "vba",
+        "code": "' Clear memory in VBA\nSub ClearMemory()\n    Application.Calculation = xlCalculationManual\n    Application.ScreenUpdating = False\n    \n    ' Your code here\n    \n    Application.Calculation = xlCalculationAutomatic\n    Application.ScreenUpdating = True\nEnd Sub"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices for Automation"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Start simple** - Begin with basic macros and build complexity",
+          "**Document everything** - Comments in code, user instructions",
+          "**Test thoroughly** - Use different scenarios and edge cases",
+          "**Backup regularly** - Keep copies of working versions",
+          "**Plan for errors** - Include error handling in VBA",
+          "**Train users** - Provide clear instructions and examples",
+          "**Maintain regularly** - Update automation as needs change"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Pro Tip**: Create a personal macro workbook (PERSONAL.XLSB) to store macros that you use across multiple workbooks. This makes them available in every Excel session."
+    },
+    {
+      "type": "heading",
+      "content": "Next Steps"
+    },
+    {
+      "type": "paragraph",
+      "content": "You've now completed the comprehensive Excel training program! Consider exploring:"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Power BI** - Advanced data visualization and business intelligence",
+          "**Microsoft 365 Integration** - Connect Excel with other Office apps",
+          "**Advanced VBA Programming** - Custom functions and complex automation",
+          "**Excel Add-ins** - Extend functionality with third-party tools",
+          "**Online Collaboration** - Real-time co-authoring and sharing"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "**Remember**: Automation is a journey, not a destination. Start with simple tasks and gradually build more complex solutions. The time you invest in learning automation will pay dividends in productivity gains."
+    }
+  ]
+} 

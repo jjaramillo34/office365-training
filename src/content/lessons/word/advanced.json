@@ -1,0 +1,374 @@
+{
+  "id": "advanced",
+  "title": "📘 Advanced Word Features",
+  "description": "Take your Word skills to the next level with advanced features that will make you more productive and help you create professional documents.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "type": "text",
+      "markdown": "Take your Word skills to the next level with advanced features that will make you more productive and help you create professional documents."
+    },
+    {
+      "id": "learning-objectives",
+      "title": "✅ Learning Objectives",
+      "type": "objectives",
+      "objectives": [
+        "Master **Word styles and templates**",
+        "Work with **headers, footers, and page numbers**",
+        "Use **advanced collaboration features**",
+        "Create **professional document layouts**"
+      ]
+    },
+    {
+      "id": "styles-templates",
+      "title": "🎨 Styles and Templates",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "understanding-styles",
+          "title": "Understanding Styles",
+          "type": "content",
+          "markdown": "Styles are predefined formatting combinations applied to text for quick and consistent appearance.",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Key Benefits:**",
+              "Consistent formatting across documents",
+              "Easy to update multiple elements at once",
+              "Professional look with minimal effort"
+            ]
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Common Style Types:**",
+              "**Heading Styles**: For document structure (Heading 1, 2, 3)",
+              "**Paragraph Styles**: Control paragraph formatting",
+              "**Character Styles**: Apply to selected text only",
+              "**Linked Styles**: Apply to paragraphs or selected text"
+            ]
+          }
+        },
+        {
+          "id": "creating-custom-styles",
+          "title": "✅ Creating Custom Styles",
+          "type": "list",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "Format text as desired",
+              "Select the formatted text",
+              "Right-click → **Styles → Save Selection as a New Quick Style**",
+              "Name your style and click **OK**"
+            ]
+          }
+        },
+        {
+          "id": "using-templates",
+          "title": "Using Templates",
+          "type": "content",
+          "markdown": "Templates are pre-designed documents to save time.",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Built-in Templates:**",
+              "Letters",
+              "Reports",
+              "Resumes",
+              "Newsletters",
+              "Brochures"
+            ]
+          },
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Creating Custom Templates:**",
+              "Design your document",
+              "Go to **File → Save As**",
+              "Choose **Word Template (*.dotx)**",
+              "Save in the Templates folder"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "headers-footers",
+      "title": "🖋 Headers, Footers, and Page Numbers",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "adding-headers-footers",
+          "title": "Adding Headers and Footers",
+          "type": "content",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Steps:**",
+              "Go to **Insert → Header** or **Insert → Footer**",
+              "Choose a built-in design or select **Edit Header/Footer**",
+              "Type your content",
+              "Double-click outside to exit"
+            ]
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Common Elements:**",
+              "Document title",
+              "Page numbers",
+              "Date and time",
+              "Company logo",
+              "Author name"
+            ]
+          }
+        },
+        {
+          "id": "page-numbers",
+          "title": "Page Numbers",
+          "type": "content",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Automatic Page Numbering:**",
+              "Go to **Insert → Page Number**",
+              "Choose position (top, bottom, margins)",
+              "Select a design style"
+            ]
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Custom Page Numbering:**",
+              "Start from a specific number",
+              "Use different formats (1, 2, 3 or A, B, C)",
+              "Include chapter numbers"
+            ]
+          }
+        },
+        {
+          "id": "different-headers-footers",
+          "title": "Different Headers/Footers",
+          "type": "list",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**First Page Different**: Great for title pages",
+              "**Odd & Even Pages**: Common in books/reports"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "collaboration-features",
+      "title": "🤝 Advanced Collaboration Features",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "track-changes",
+          "title": "Track Changes",
+          "type": "content",
+          "markdown": "Track all modifications made to a document.",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Enable Track Changes:**",
+              "Go to **Review → Track Changes**",
+              "Click to turn it on"
+            ]
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Review Changes:**",
+              "Accept or reject changes",
+              "Add comments for clarity"
+            ]
+          }
+        },
+        {
+          "id": "comments",
+          "title": "Comments",
+          "type": "content",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Add Comments:**",
+              "Select text",
+              "Go to **Review → New Comment**"
+            ]
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Manage Comments:**",
+              "Reply",
+              "Resolve",
+              "Delete"
+            ]
+          }
+        },
+        {
+          "id": "document-comparison",
+          "title": "Document Comparison",
+          "type": "content",
+          "markdown": "Compare two versions of a document:",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "Go to **Review → Compare**",
+              "Choose original and revised documents",
+              "Review the differences"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "professional-layout",
+      "title": "📰 Professional Document Layout",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "section-breaks",
+          "title": "Section Breaks",
+          "type": "content",
+          "markdown": "Allow different formatting in different sections.",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Types:**",
+              "**Next Page**: Starts new section on next page",
+              "**Continuous**: Same page",
+              "**Even/Odd Page**: Starts on specific page types"
+            ]
+          }
+        },
+        {
+          "id": "columns",
+          "title": "Columns",
+          "type": "content",
+          "markdown": "Create multi-column layouts:",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "Select text",
+              "Go to **Layout → Columns**",
+              "Choose number of columns"
+            ]
+          }
+        },
+        {
+          "id": "table-of-contents",
+          "title": "Table of Contents (TOC)",
+          "type": "content",
+          "markdown": "Automatically generate a TOC:",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "Apply heading styles",
+              "Place cursor where TOC should appear",
+              "Go to **References → Table of Contents**",
+              "Choose a style"
+            ]
+          },
+          "tip": {
+            "type": "info",
+            "content": "**Update TOC:** Right-click → **Update Field**"
+          }
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "title": "✅ Best Practices",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "document-organization",
+          "title": "Document Organization",
+          "type": "list",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "Use consistent heading styles",
+              "Logical structure",
+              "Use page and section breaks properly"
+            ]
+          }
+        },
+        {
+          "id": "collaboration",
+          "title": "Collaboration",
+          "type": "list",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "Always use Track Changes",
+              "Add clear comments",
+              "Use meaningful file names"
+            ]
+          }
+        },
+        {
+          "id": "professional-appearance",
+          "title": "Professional Appearance",
+          "type": "list",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "Use templates",
+              "Apply styles, not manual formatting",
+              "Include headers, footers, and page numbers"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "practice-exercise",
+      "title": "🏆 Practice Exercise",
+      "type": "exercise",
+      "exercise": {
+        "title": "Create a Professional Report",
+        "description": "Practice all the advanced features you've learned by creating a comprehensive professional report.",
+        "steps": [
+          "Create a **professional report** using:",
+          "Heading styles",
+          "Different header/footer for title page",
+          "Page numbers",
+          "Table of contents",
+          "Section breaks for different layouts",
+          "Enable Track Changes and add comments",
+          "Save as a template"
+        ],
+        "estimatedTime": "30 minutes",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "id": "key-takeaways",
+      "title": "🔑 Key Takeaways",
+      "type": "list",
+      "list": {
+        "type": "bullet",
+        "items": [
+          "**Styles and templates** ensure consistency",
+          "**Headers and footers** add professionalism",
+          "**Track Changes** improves collaboration",
+          "**Section breaks** allow flexible layouts",
+          "**TOCs** make navigation easy"
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "estimatedTime": "45 minutes",
+    "difficulty": "advanced",
+    "prerequisites": ["intro", "formatting"],
+    "tags": ["advanced", "styles", "templates", "collaboration", "professional"],
+    "lastUpdated": "2024-01-15"
+  }
+} 

@@ -7,124 +7,173 @@ export interface QuizQuestion {
 
 export const wordQuiz: QuizQuestion[] = [
   {
-    question: "Which file extension is used for Word documents by default?",
-    options: [".doc", ".docx", ".txt", ".pdf"],
-    correct: 1,
-    tip: "Since 2007, Word uses .docx as the default format for better compatibility and compression."
-  },
-  {
-    question: "What is the shortcut to make text bold in Word?",
-    options: ["Ctrl+B", "Ctrl+I", "Ctrl+U", "Ctrl+S"],
+    question: "What is the keyboard shortcut to save a document in Word?",
+    options: ["Ctrl+S", "Ctrl+N", "Ctrl+O", "Ctrl+P"],
     correct: 0,
-    tip: "Ctrl+B applies bold formatting. Remember: I = Italic, U = Underline."
+    tip: "Ctrl+S is the universal save shortcut. Use it frequently to avoid losing your work!"
   },
   {
-    question: "Which feature checks spelling and grammar in a document?",
-    options: ["Track Changes", "Spell Check", "Word Count", "SmartArt"],
-    correct: 1,
-    tip: "Spell Check can be accessed from the Review tab or by pressing F7."
-  },
-  {
-    question: "How do you insert a page break?",
-    options: ["Ctrl+Enter", "Ctrl+P", "Ctrl+Shift+N", "Ctrl+M"],
+    question: "Which feature allows you to see how your document will look when printed?",
+    options: ["Print Preview", "Page Layout", "Reading View", "Draft View"],
     correct: 0,
-    tip: "Page breaks help organize content without repeatedly pressing Enter."
+    tip: "Print Preview shows exactly how your document will appear on paper, including margins and page breaks."
   },
   {
-    question: "What is the function of the 'Track Changes' feature?",
-    options: ["Counts words", "Shows formatting marks", "Records edits and comments", "Saves automatically"],
+    question: "What does the Find and Replace feature do?",
+    options: [
+      "Only finds text",
+      "Only replaces text",
+      "Finds and optionally replaces text",
+      "Deletes text"
+    ],
     correct: 2,
-    tip: "Track Changes is useful for collaboration—it marks all edits for review."
+    tip: "Find and Replace can locate specific text and optionally replace it with new text throughout your document."
   },
   {
-    question: "Which tab contains the option to insert a table?",
-    options: ["Home", "Insert", "Layout", "References"],
+    question: "Which view shows the document as it will appear when printed?",
+    options: ["Draft", "Print Layout", "Web Layout", "Outline"],
     correct: 1,
-    tip: "Use Insert > Table to create tables and organize content."
+    tip: "Print Layout view shows headers, footers, and page margins exactly as they'll appear in the final document."
+  },
+  {
+    question: "What is the purpose of headers and footers?",
+    options: [
+      "To make text bold",
+      "To add page numbers and document info",
+      "To change font size",
+      "To add borders"
+    ],
+    correct: 1,
+    tip: "Headers and footers appear on every page and typically contain page numbers, dates, or document titles."
+  },
+  {
+    question: "Which feature automatically corrects common spelling mistakes?",
+    options: ["AutoCorrect", "Spell Check", "Grammar Check", "Thesaurus"],
+    correct: 0,
+    tip: "AutoCorrect fixes common typos automatically, like changing 'teh' to 'the' as you type."
+  },
+  {
+    question: "What does the Undo feature do?",
+    options: [
+      "Deletes text",
+      "Reverses the last action",
+      "Saves the document",
+      "Prints the document"
+    ],
+    correct: 1,
+    tip: "Undo (Ctrl+Z) reverses your last action. You can undo multiple actions in sequence."
+  },
+  {
+    question: "Which feature allows you to create a numbered or bulleted list?",
+    options: ["AutoNumber", "List Format", "Bullets and Numbering", "AutoList"],
+    correct: 2,
+    tip: "Bullets and Numbering automatically formats lists with consistent spacing and indentation."
+  },
+  {
+    question: "What is the purpose of track changes?",
+    options: [
+      "To change font styles",
+      "To track editing changes for review",
+      "To save automatically",
+      "To print documents"
+    ],
+    correct: 1,
+    tip: "Track Changes shows all edits, deletions, and additions so others can review your changes."
+  },
+  {
+    question: "Which feature allows you to insert page breaks?",
+    options: ["Page Break", "Section Break", "Column Break", "All of the above"],
+    correct: 3,
+    tip: "Different types of breaks control how content flows between pages, sections, and columns."
   },
   {
     question: "What does the Format Painter do?",
-    options: ["Paints shapes", "Copies formatting", "Inserts images", "Checks grammar"],
+    options: [
+      "Changes font color",
+      "Copies formatting from one place to another",
+      "Paints backgrounds",
+      "Creates borders"
+    ],
     correct: 1,
-    tip: "Format Painter copies styles like font, color, and size to another text selection."
+    tip: "Format Painter copies formatting (font, size, color, etc.) from selected text and applies it elsewhere."
   },
   {
-    question: "How can you add a header to your document?",
-    options: ["Insert > Header", "Home > Header", "Layout > Header", "Review > Header"],
-    correct: 0,
-    tip: "Headers and footers can include page numbers, titles, or custom text."
+    question: "Which feature allows you to create columns in a document?",
+    options: ["Column Layout", "Multi-column", "Text Columns", "Page Columns"],
+    correct: 2,
+    tip: "Text Columns divide your page into multiple vertical sections, like in newspapers or newsletters."
   },
   {
-    question: "Which shortcut is used to save a document?",
-    options: ["Ctrl+S", "Ctrl+O", "Ctrl+N", "Ctrl+P"],
-    correct: 0,
-    tip: "Ctrl+S saves the current document. Use it frequently to avoid data loss!"
-  },
-  {
-    question: "What is the default font in most versions of Word?",
-    options: ["Arial", "Calibri", "Times New Roman", "Verdana"],
+    question: "What is the purpose of styles in Word?",
+    options: [
+      "To make text colorful",
+      "To apply consistent formatting quickly",
+      "To change page size",
+      "To add pictures"
+    ],
     correct: 1,
-    tip: "Calibri replaced Times New Roman as the default in Word 2007."
+    tip: "Styles apply consistent formatting to headings, paragraphs, and other elements throughout your document."
   },
   {
-    question: "How do you insert a hyperlink?",
-    options: ["Ctrl+H", "Ctrl+K", "Ctrl+L", "Ctrl+Shift+H"],
+    question: "Which feature allows you to insert a table?",
+    options: ["Table Insert", "Insert Table", "Create Table", "Add Table"],
     correct: 1,
-    tip: "Ctrl+K opens the Insert Hyperlink dialog box."
+    tip: "Insert Table creates a grid where you can organize data in rows and columns."
   },
   {
-    question: "Which feature allows you to see what a document will look like when printed?",
-    options: ["Print Preview", "Read Mode", "Web Layout", "Outline"],
-    correct: 0,
-    tip: "Print Preview is found in File > Print and is great for final checks."
-  },
-  {
-    question: "What is the function of the 'References' tab?",
-    options: ["Insert images", "Manage citations and bibliography", "Change page layout", "Check spelling"],
+    question: "What does the Word Count feature show?",
+    options: [
+      "Only word count",
+      "Word count, character count, and page count",
+      "Only character count",
+      "Only page count"
+    ],
     correct: 1,
-    tip: "References tab helps with citations, table of contents, and bibliographies."
+    tip: "Word Count displays comprehensive statistics including words, characters (with and without spaces), and pages."
   },
   {
-    question: "How do you create a bulleted list?",
-    options: ["Home > Bullets", "Insert > Bullets", "Layout > Bullets", "Review > Bullets"],
-    correct: 0,
-    tip: "Bulleted and numbered lists are in the Home tab under Paragraph group."
-  },
-  {
-    question: "Which option is used to change the page orientation?",
-    options: ["Layout > Orientation", "Home > Orientation", "Insert > Orientation", "References > Orientation"],
-    correct: 0,
-    tip: "Use Layout > Orientation to switch between Portrait and Landscape."
-  },
-  // ✅ NEW QUESTIONS
-  {
-    question: "What is the shortcut for undoing an action in Word?",
-    options: ["Ctrl+X", "Ctrl+Z", "Ctrl+Y", "Ctrl+Q"],
+    question: "Which feature allows you to add comments to a document?",
+    options: ["Add Comment", "Insert Comment", "New Comment", "Create Comment"],
     correct: 1,
-    tip: "Ctrl+Z = Undo, Ctrl+Y = Redo. Essential for quick edits."
+    tip: "Comments allow you to add notes or feedback without changing the main document text."
   },
   {
-    question: "Which feature in Word automatically creates a list of headings?",
-    options: ["Table of Contents", "Index", "SmartArt", "Outline View"],
-    correct: 0,
-    tip: "A Table of Contents is generated from Heading styles applied in the document."
-  },
-  {
-    question: "What is the purpose of the 'Navigation Pane' in Word?",
-    options: ["To check spelling", "To view and search headings/pages", "To track changes", "To insert hyperlinks"],
+    question: "What is the purpose of the Navigation Pane?",
+    options: [
+      "To navigate between documents",
+      "To quickly jump to headings, pages, or search results",
+      "To change document settings",
+      "To format text"
+    ],
     correct: 1,
-    tip: "The Navigation Pane helps jump between headings or pages quickly."
+    tip: "The Navigation Pane provides quick access to document structure and search functionality."
   },
   {
-    question: "How can you protect a Word document from editing?",
-    options: ["File > Info > Protect Document", "Home > Protect Document", "Insert > Protect Document", "View > Protect Document"],
-    correct: 0,
-    tip: "You can add passwords or restrict editing under File > Info > Protect Document."
+    question: "Which feature allows you to protect a document with a password?",
+    options: ["Document Protection", "Password Protect", "Restrict Editing", "Secure Document"],
+    correct: 2,
+    tip: "Restrict Editing can prevent others from making changes to your document or require a password to edit."
   },
   {
-    question: "What does the 'Read Mode' view do?",
-    options: ["Optimizes document for reading on screen", "Shows print layout", "Displays web layout", "Shows editing marks"],
-    correct: 0,
-    tip: "Read Mode removes distractions and adjusts layout for comfortable reading."
+    question: "What does the Mail Merge feature do?",
+    options: [
+      "Sends emails",
+      "Combines a document template with a data source",
+      "Merges multiple documents",
+      "Creates mailing labels"
+    ],
+    correct: 1,
+    tip: "Mail Merge personalizes documents by combining a template with data from a spreadsheet or database."
+  },
+  {
+    question: "Which feature allows you to create a table of contents?",
+    options: [
+      "Auto Table of Contents",
+      "Insert Table of Contents",
+      "Create Contents",
+      "Generate TOC"
+    ],
+    correct: 1,
+    tip: "Table of Contents automatically creates a list of headings and their page numbers based on your document structure."
   }
 ];

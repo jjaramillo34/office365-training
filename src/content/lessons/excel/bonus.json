@@ -1,0 +1,405 @@
+{
+  "id": "bonus",
+  "title": "🚀 Bonus: Excel Power User Features",
+  "description": "Unlock the full potential of Excel with advanced features like PivotTables, macros, and data analysis tools.",
+  "metadata": {
+    "duration": "20 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "formulas", "charts"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Excel Power User Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "Unlock the full potential of Excel with these advanced features and educator-focused tips. From PivotTables to macros, discover tools that will transform your productivity and make you an Excel power user."
+    },
+    {
+      "type": "heading",
+      "content": "PivotTables"
+    },
+    {
+      "type": "subheading",
+      "content": "What are PivotTables?"
+    },
+    {
+      "type": "paragraph",
+      "content": "PivotTables are Excel's most powerful data analysis tool. They allow you to summarize, analyze, explore, and present large amounts of data in a flexible, interactive format."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Summarize data** - Group and aggregate information",
+          "**Analyze trends** - Identify patterns and insights",
+          "**Interactive exploration** - Drill down into details",
+          "**Dynamic updates** - Automatically refresh with new data",
+          "**Multiple views** - Same data, different perspectives"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Creating Your First PivotTable"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Select your data** - Include headers in your selection",
+          "**Insert PivotTable** - Go to Insert > PivotTable",
+          "**Choose location** - New worksheet or existing location",
+          "**Drag fields** - Add fields to Rows, Columns, Values, Filters",
+          "**Customize** - Format and style your PivotTable"
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Example: Student Grade Analysis PivotTable\n// Rows: Student Name\n// Columns: Subject\n// Values: Average Grade\n// Filters: Semester\n// This creates a summary table showing each student's average grade by subject"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Formulas"
+    },
+    {
+      "type": "subheading",
+      "content": "Array Formulas"
+    },
+    {
+      "type": "paragraph",
+      "content": "Array formulas perform calculations on multiple values at once, making them incredibly powerful for complex calculations."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=SUM(IF(A1:A10>5,A1:A10,0))     // Sum values greater than 5\n=AVERAGE(IF(B1:B10=\"A\",C1:C10,\"\"))  // Average grades for A students\n=COUNTIFS(A1:A10,\">5\",B1:B10,\"<10\") // Count with multiple criteria"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Dynamic Array Functions (Excel 365)"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=UNIQUE(A1:A10)           // Remove duplicates\n=FILTER(A1:A10,B1:B10>5)    // Filter based on condition\n=SORT(A1:A10)               // Sort data dynamically\n=SEQUENCE(10)               // Generate sequence 1-10"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Data Analysis Tools"
+    },
+    {
+      "type": "subheading",
+      "content": "Goal Seek"
+    },
+    {
+      "type": "paragraph",
+      "content": "Goal Seek helps you find the input value needed to achieve a desired result. Perfect for 'what-if' analysis."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Set up your formula** - Create the calculation",
+          "**Data > What-If Analysis > Goal Seek**",
+          "**Set cell** - The cell with your formula",
+          "**To value** - Your target result",
+          "**By changing cell** - The input cell to adjust"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Solver"
+    },
+    {
+      "type": "paragraph",
+      "content": "Solver finds optimal solutions for complex problems with multiple variables and constraints."
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Budget Optimization",
+        "description": "Use Solver to optimize a school budget allocation across different departments while staying within total budget constraints.",
+        "hint": "Set up constraints for minimum and maximum allocations per department",
+        "solution": "1. Set up your budget model\n2. Data > Solver\n3. Set objective (maximize efficiency)\n4. Add constraints (budget limits)\n5. Solve for optimal allocation"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Macros and VBA"
+    },
+    {
+      "type": "subheading",
+      "content": "Recording Macros"
+    },
+    {
+      "type": "paragraph",
+      "content": "Macros automate repetitive tasks by recording your actions and playing them back. No programming required!"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Developer tab** - Enable in Excel options",
+          "**Record Macro** - Start recording your actions",
+          "**Perform tasks** - Do what you want to automate",
+          "**Stop Recording** - End the macro",
+          "**Run Macro** - Execute when needed"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Common Macro Uses"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Format reports** - Apply consistent styling",
+          "**Data cleanup** - Remove duplicates, fix formatting",
+          "**Import data** - Process external files",
+          "**Generate reports** - Create standardized outputs",
+          "**Email integration** - Send reports automatically"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Power Query"
+    },
+    {
+      "type": "subheading",
+      "content": "Data Transformation"
+    },
+    {
+      "type": "paragraph",
+      "content": "Power Query is Excel's data transformation tool. It helps you clean, reshape, and combine data from multiple sources."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Clean messy data** - Remove duplicates, fix errors",
+          "**Combine multiple files** - Merge data from different sources",
+          "**Transform data** - Split columns, change data types",
+          "**Create calculated columns** - Add new data based on existing",
+          "**Refresh automatically** - Update when source data changes"
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "// Power Query Example: Combine Student Data\n// 1. Data > Get Data > From File > From Folder\n// 2. Select folder with multiple Excel files\n// 3. Transform data (clean names, standardize formats)\n// 4. Merge with other data sources\n// 5. Load to worksheet or data model"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Conditional Formatting Advanced"
+    },
+    {
+      "type": "subheading",
+      "content": "Custom Rules"
+    },
+    {
+      "type": "paragraph",
+      "content": "Go beyond basic conditional formatting with custom formulas and advanced rules."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=AND(A1>AVERAGE($A$1:$A$10),A1<MAX($A$1:$A$10))  // Above average but not max\n=COUNTIF($A$1:$A$10,A1)>1  // Highlight duplicates\n=MOD(ROW(),2)=0  // Alternate row colors\n=A1>TODAY()  // Future dates"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Data Bars and Icon Sets"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Data Bars** - Visual representation of values",
+          "**Color Scales** - Gradient based on value ranges",
+          "**Icon Sets** - Symbols indicating performance",
+          "**Custom Scales** - Define your own thresholds",
+          "**Dynamic Updates** - Automatically adjust with data changes"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Data Validation Advanced"
+    },
+    {
+      "type": "subheading",
+      "content": "Custom Validation Rules"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create sophisticated validation rules using formulas to ensure data quality."
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=AND(LEN(A1)>=8,LEN(A1)<=20)  // Password length 8-20\n=ISNUMBER(A1)  // Numbers only\n=COUNTIF($A$1:$A$10,A1)=1  // Unique values only\n=A1>TODAY()  // Future dates only\n=OR(A1=\"Yes\",A1=\"No\")  // Yes/No only"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Collaboration Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Shared Workbooks"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Track Changes** - See who made what changes",
+          "**Comments** - Add notes to cells",
+          "**Protection** - Restrict editing to specific areas",
+          "**Version History** - Access previous versions",
+          "**Real-time Collaboration** - Work together simultaneously"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "OneDrive Integration"
+    },
+    {
+      "type": "paragraph",
+      "content": "Save your workbooks to OneDrive for automatic backup, sharing, and collaboration."
+    },
+    {
+      "type": "heading",
+      "content": "Performance Optimization"
+    },
+    {
+      "type": "subheading",
+      "content": "Large File Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Use tables** - Excel tables are more efficient",
+          "**Avoid volatile functions** - Minimize NOW(), TODAY(), RAND()",
+          "**Limit formatting** - Too much formatting slows performance",
+          "**Use PivotTables** - More efficient than complex formulas",
+          "**Compress images** - Reduce file size"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Calculation Settings"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Manual calculation** - Control when formulas recalculate",
+          "**Iterative calculation** - For circular references",
+          "**Multi-threaded calculation** - Use all CPU cores",
+          "**Background calculation** - Continue working while calculating"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Educator-Specific Tips"
+    },
+    {
+      "type": "subheading",
+      "content": "Grade Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Weighted grades** - Use SUMPRODUCT for weighted averages",
+          "**Curve grades** - Apply statistical curves to scores",
+          "**Attendance tracking** - Use COUNTIF for attendance percentages",
+          "**Progress reports** - Create dynamic progress tracking",
+          "**Parent communication** - Generate personalized reports"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Data Analysis for Education"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Student performance trends** - Track progress over time",
+          "**Class comparisons** - Compare different sections",
+          "**Assessment analysis** - Analyze test results",
+          "**Resource allocation** - Optimize budget and resources",
+          "**Enrollment projections** - Plan for future needs"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Final Project: Comprehensive Grade Book",
+        "description": "Create a complete grade book system with PivotTables for analysis, conditional formatting for performance indicators, and macros for report generation.",
+        "hint": "Combine multiple advanced features: PivotTables, conditional formatting, data validation, and macros",
+        "solution": "1. Set up grade entry with data validation\n2. Create PivotTables for analysis\n3. Add conditional formatting for performance\n4. Record macro for report generation\n5. Add charts for visual analysis"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices Summary"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Start simple** - Master basics before advanced features",
+          "**Document your work** - Explain complex formulas and macros",
+          "**Test thoroughly** - Verify results with multiple scenarios",
+          "**Backup regularly** - Save versions before major changes",
+          "**Learn continuously** - Excel evolves with new features",
+          "**Share knowledge** - Teach others what you learn"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Remember that the goal of Excel power features is to save time and improve accuracy. Don't over-engineer solutions - sometimes the simplest approach is the best one."
+    }
+  ]
+} 

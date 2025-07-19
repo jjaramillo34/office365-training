@@ -1,0 +1,141 @@
+{
+  "id": "intro",
+  "title": "📧 Introduction to Microsoft Outlook",
+  "description": "Master Microsoft Outlook, the powerful email and personal information manager. Learn to manage emails, calendar, contacts, and tasks efficiently.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "type": "text",
+      "markdown": "Microsoft Outlook is a comprehensive personal information manager that helps you organize emails, schedule meetings, manage contacts, and track tasks. It's essential for professional communication and productivity."
+    },
+    {
+      "id": "learning-objectives",
+      "title": "🎯 Learning Objectives",
+      "type": "objectives",
+      "objectives": [
+        "Navigate the Outlook interface confidently",
+        "Send and receive emails effectively",
+        "Organize emails with folders and rules",
+        "Manage your calendar and schedule meetings",
+        "Create and maintain contact lists"
+      ]
+    },
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "opening-outlook",
+          "title": "Opening Outlook",
+          "type": "content",
+          "markdown": "Learn how to access Microsoft Outlook on different platforms.",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Desktop App**: Launch from Start menu or desktop icon",
+              "**Web Version**: Visit outlook.office.com",
+              "**Mobile App**: Download from app store",
+              "**Office.com**: Access through office.com portal"
+            ]
+          }
+        },
+        {
+          "id": "understanding-interface",
+          "title": "Understanding the Interface",
+          "type": "content",
+          "markdown": "Familiarize yourself with the main components of Outlook.",
+          "table": {
+            "headers": ["Component", "Description"],
+            "rows": [
+              ["**Navigation Pane**", "Switch between Mail, Calendar, People, Tasks"],
+              ["**Folder Pane**", "Organize emails into folders"],
+              ["**Message List**", "Shows emails in selected folder"],
+              ["**Reading Pane**", "Preview email content"],
+              ["**Ribbon**", "Commands organized by tabs"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "email-basics",
+      "title": "Email Basics",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "sending-emails",
+          "title": "Sending Emails",
+          "type": "content",
+          "markdown": "Learn the fundamentals of composing and sending emails.",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "Click **New Email** or press Ctrl + N",
+              "Enter recipient email address in **To** field",
+              "Add a clear **Subject** line",
+              "Type your message in the body",
+              "Click **Send** when ready"
+            ]
+          }
+        },
+        {
+          "id": "email-etiquette",
+          "title": "Email Etiquette",
+          "type": "content",
+          "markdown": "Follow professional email practices for effective communication.",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Clear Subject Lines** - Make them descriptive",
+              "**Professional Greetings** - Use appropriate salutations",
+              "**Concise Content** - Keep messages brief and focused",
+              "**Professional Signatures** - Include contact information",
+              "**Proofread** - Check for errors before sending"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "practice-exercise",
+      "title": "🏆 Practice Exercise",
+      "type": "exercise",
+      "exercise": {
+        "title": "Send Your First Professional Email",
+        "description": "Practice composing and sending a professional email using Outlook.",
+        "steps": [
+          "Open Outlook and create a new email",
+          "Address it to yourself (for practice)",
+          "Write a clear subject line",
+          "Compose a professional message",
+          "Add a signature if available",
+          "Send the email and check your inbox"
+        ],
+        "checklist": [
+          "Email has a clear, descriptive subject",
+          "Message is professional and well-written",
+          "No spelling or grammar errors",
+          "Email is sent successfully",
+          "You can find it in your inbox"
+        ],
+        "estimatedTime": "10 minutes",
+        "difficulty": "beginner"
+      }
+    },
+    {
+      "id": "next-steps",
+      "title": "Next Steps",
+      "type": "content",
+      "markdown": "In the next lesson, you'll learn:\n\n- **Calendar Management** - Scheduling meetings and events\n- **Email Organization** - Folders, rules, and filters\n- **Contact Management** - Building your address book\n- **Advanced Features** - Tasks, notes, and productivity tools\n\n> **Remember**: Good email habits will serve you well in your professional life!"
+    }
+  ],
+  "metadata": {
+    "estimatedTime": "20 minutes",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "tags": ["basics", "email", "interface", "communication"],
+    "lastUpdated": "2024-01-15"
+  }
+} 

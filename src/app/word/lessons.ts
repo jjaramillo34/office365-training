@@ -1,4 +1,4 @@
-import { loadAllLessons } from "@/lib/content";
+import { loadAllLessonsJSON } from "@/lib/content-json";
 
 export interface Lesson {
   id: string;
@@ -9,12 +9,21 @@ export interface Lesson {
 
 export async function loadWordLessons(): Promise<Lesson[]> {
   try {
-    const lessons = await loadAllLessons("word");
-    return lessons.map(lesson => ({
+    const lessons = await loadAllLessonsJSON("word");
+    
+    // Define the correct order for lessons
+    const lessonOrder = ['intro', 'formatting', 'advanced', 'bonus'];
+    
+    // Sort lessons according to the defined order
+    const sortedLessons = lessonOrder
+      .map(id => lessons.find(lesson => lesson.id === id))
+      .filter(lesson => lesson !== undefined);
+    
+    return sortedLessons.map((lesson: any) => ({
       id: lesson.id,
       title: lesson.title,
       description: lesson.description,
-      content: lesson.content
+      content: lesson.content || ""
     }));
   } catch (error) {
     console.error("Error loading Word lessons:", error);

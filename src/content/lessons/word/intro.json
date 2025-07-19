@@ -1,0 +1,206 @@
+{
+  "id": "intro",
+  "title": "📘 Introduction to Microsoft Word",
+  "description": "Microsoft Word is a powerful word processing application essential for creating professional documents. In this lesson, you'll learn the fundamentals of Word and discover how to create, format, and manage documents effectively.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "type": "text",
+      "markdown": "Microsoft Word is a powerful word processing application essential for creating professional documents. In this lesson, you'll learn the fundamentals of Word and discover how to create, format, and manage documents effectively."
+    },
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "opening-word",
+          "title": "✅ Opening Word",
+          "type": "content",
+          "markdown": "There are several ways to open Microsoft Word depending on your setup and preferences.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-start-screen.png",
+            "alt": "Word start screen – Blank Document highlighted"
+          },
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**From Start Menu**: Click the **Start** button and search for **Word**",
+              "**From Desktop**: Double-click the Word icon",
+              "**From Office.com**: Visit [office.com](https://office.com) and launch Word Online"
+            ]
+          }
+        },
+        {
+          "id": "understanding-interface",
+          "title": "🖥️ Understanding the Interface",
+          "type": "content",
+          "markdown": "Familiarize yourself with the main components of the Word interface to work efficiently.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-intro-interface.png",
+            "alt": "Main interface with Ribbon and key elements"
+          },
+          "table": {
+            "headers": ["Component", "Description"],
+            "rows": [
+              ["**Ribbon**", "Tabs with commands organized by function"],
+              ["**Quick Access Toolbar**", "Customizable toolbar for frequently used commands"],
+              ["**Document Area**", "Main workspace for typing and editing"],
+              ["**Status Bar**", "Displays document info and zoom controls"],
+              ["**Navigation Pane**", "Helps navigate through document sections"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "basic-text-operations",
+      "title": "Basic Text Operations",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "typing-editing",
+          "title": "Typing and Editing",
+          "type": "content",
+          "markdown": "Learn the fundamental text editing operations in Word.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-intro-step1.png",
+            "alt": "Example: Selecting and formatting text – Step 1"
+          },
+          "codeBlock": {
+            "language": "text",
+            "content": "• Type text by clicking and typing\n• Use Backspace to delete characters\n• Use Delete to remove characters ahead\n• Double-click to select a word\n• Triple-click to select a paragraph"
+          }
+        },
+        {
+          "id": "keyboard-shortcuts",
+          "title": "⌨️ Keyboard Shortcuts",
+          "type": "table",
+          "table": {
+            "headers": ["Shortcut", "Action"],
+            "rows": [
+              ["`Ctrl + C`", "Copy"],
+              ["`Ctrl + V`", "Paste"],
+              ["`Ctrl + X`", "Cut"],
+              ["`Ctrl + Z`", "Undo"],
+              ["`Ctrl + Y`", "Redo"],
+              ["`Ctrl + A`", "Select all"],
+              ["`Ctrl + S`", "Save"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "document-formatting",
+      "title": "Document Formatting",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "text-formatting",
+          "title": "Text Formatting",
+          "type": "content",
+          "markdown": "**Bold**, *Italic*, and ~~Strikethrough~~ make text stand out.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-intro-feature.png",
+            "alt": "Font dialog box for text formatting options"
+          },
+          "tip": {
+            "type": "pro",
+            "content": "Use formatting consistently for a professional look."
+          }
+        },
+        {
+          "id": "paragraph-formatting",
+          "title": "Paragraph Formatting",
+          "type": "content",
+          "markdown": "Control how your paragraphs are aligned and spaced.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-intro-step2.png",
+            "alt": "Alignment options – Step 2 in action"
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Left Align**",
+              "**Center**",
+              "**Right Align**",
+              "**Justify**"
+            ]
+          }
+        },
+        {
+          "id": "lists-bullets",
+          "title": "Lists & Bullets",
+          "type": "content",
+          "markdown": "Create organized lists to structure your content effectively.",
+          "image": {
+            "src": "/images/screenshots/word/intro/word-intro-feature.png",
+            "alt": "Bulleted and numbered lists in Ribbon"
+          }
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "title": "Best Practices",
+      "type": "content",
+      "markdown": "Follow these guidelines to create professional-looking documents.",
+      "image": {
+        "src": "/images/screenshots/word/intro/word-intro-interface.png",
+        "alt": "Clean, structured document layout using styles"
+      },
+      "list": {
+        "type": "numbered",
+        "items": [
+          "Use **Headings** for hierarchy",
+          "Keep formatting **consistent**",
+          "Use **white space** for readability",
+          "Always **proofread**"
+        ]
+      }
+    },
+    {
+      "id": "exercise",
+      "title": "Exercise: Create Your First Document",
+      "type": "exercise",
+      "exercise": {
+        "title": "Create Your First Document",
+        "description": "Practice your new Word skills by creating a simple meeting agenda document.",
+        "image": {
+          "src": "/images/screenshots/word/intro/word-intro-result.png",
+          "alt": "Final result – formatted Word document"
+        },
+        "steps": [
+          "Open Word and create a **new blank document**",
+          "Add a **title** and format as Heading 1",
+          "Add your **name** and **date**",
+          "Create a **list** of agenda items",
+          "Save with a **descriptive name**"
+        ],
+        "estimatedTime": "10 minutes",
+        "difficulty": "beginner"
+      }
+    },
+    {
+      "id": "next-steps",
+      "title": "Next Steps",
+      "type": "content",
+      "markdown": "In the next lesson, you'll learn:\n\n- Styles & Themes\n- Page Layout\n- Headers & Footers\n- Document Sections\n\n> **Remember**: Practice makes perfect! Experiment with Word features."
+    },
+    {
+      "id": "resources",
+      "title": "🔗 Resources",
+      "type": "content",
+      "markdown": "Explore these resources to learn more about Microsoft Word:\n\n- [Microsoft Word Training](https://support.microsoft.com/en-us/word)\n- [Office Templates](https://templates.office.com/)"
+    }
+  ],
+  "metadata": {
+    "estimatedTime": "20 minutes",
+    "difficulty": "beginner",
+    "prerequisites": [],
+    "tags": ["basics", "interface", "formatting", "getting-started"],
+    "lastUpdated": "2024-01-15"
+  }
+} 

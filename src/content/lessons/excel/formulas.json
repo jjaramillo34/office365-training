@@ -1,0 +1,189 @@
+{
+  "id": "formulas",
+  "title": "📊 Mastering Excel Formulas & Functions",
+  "description": "Unlock the full power of Excel by mastering formulas and functions for data analysis, automation, and decision-making.",
+  "metadata": {
+    "duration": "25 minutes",
+    "difficulty": "Intermediate to Advanced",
+    "prerequisites": ["intro", "basic-formatting"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Why Formulas Matter in Excel"
+    },
+    {
+      "type": "paragraph",
+      "content": "Formulas transform Excel from a simple grid into a powerful analytical engine. Whether you need to sum data, validate conditions, or search large tables, formulas and functions make it possible. This lesson will help you build a strong foundation and introduce advanced techniques for efficiency."
+    },
+    {
+      "type": "tip",
+      "content": "Think of formulas as a **language for Excel**. The more fluent you are, the faster you can solve problems and automate tasks."
+    },
+    {
+      "type": "heading",
+      "content": "Formula Basics Refresher"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Component", "Description", "Example"],
+        "rows": [
+          ["Equal sign (=)", "Indicates start of formula", "=A1+B1"],
+          ["Operators", "Perform calculations (+, -, *, /, ^)", "=A1*B1"],
+          ["Cell References", "Point to cell values", "=B2+C3"],
+          ["Functions", "Built-in operations", "=SUM(A1:A10)"],
+          ["Constants", "Fixed values", "=100*5"]
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Mathematical Operators"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**+** Addition: `=A1+B1`",
+          "**-** Subtraction: `=A1-B1`",
+          "*** Multiplication: `=A1*B1`",
+          "**/** Division: `=A1/B1`",
+          "**^** Power: `=A1^2` (square of A1)"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Cell References & Smart Referencing"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Type", "Behavior", "Example", "Use Case"],
+        "rows": [
+          ["Relative", "Changes when copied", "A1", "Basic formulas"],
+          ["Absolute", "Fixed row & column", "$A$1", "Fixed constants"],
+          ["Mixed", "Partially fixed", "$A1 or A$1", "Dynamic tables"]
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Quick toggle: Select the reference in the formula bar and press **F4** to cycle between reference types."
+    },
+    {
+      "type": "heading",
+      "content": "Core Excel Functions You Must Know"
+    },
+    {
+      "type": "subheading",
+      "content": "Statistical Functions"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=SUM(A1:A10)       // Total\n=AVERAGE(A1:A10)    // Mean\n=COUNT(A1:A10)      // Count numbers\n=MAX(A1:A10)        // Highest value\n=MIN(A1:A10)        // Lowest value"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Text Functions for Data Cleaning"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=TRIM(A1)         // Remove spaces\n=PROPER(A1)       // Capitalize each word\n=LEFT(A1,5)       // First 5 chars\n=CONCAT(A1,B1)    // Combine text\n=TEXT(A1,\"MM/DD/YYYY\")  // Format date"
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Date & Time Functions"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=TODAY()         // Current date\n=NOW()           // Date & time\n=DATEDIF(A1,B1,\"d\")  // Days difference"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Logical & Conditional Functions"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=IF(A1>=50,\"Pass\",\"Fail\")\n=IFS(A1>90,\"A\",A1>80,\"B\",TRUE,\"C\")\n=IFERROR(A1/B1,\"Check data\")"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Functions for Data Lookup"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=VLOOKUP(101, A2:D10, 2, FALSE)\n=XLOOKUP(\"Apple\", A2:A10, B2:B10, \"Not found\")\n=INDEX(C2:C10, MATCH(101,A2:A10,0))"
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Prefer **XLOOKUP** over VLOOKUP—it’s more powerful and flexible, eliminating common issues with column positions."
+    },
+    {
+      "type": "heading",
+      "content": "Dynamic Array Functions (Excel 365+)"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "excel",
+        "code": "=SORT(A2:A10)\n=FILTER(A2:C10, B2:B10>100)\n=UNIQUE(A2:A50)"
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice Challenge: Sales Bonus Calculator",
+        "description": "Create a formula that calculates a 10% bonus for sales above $5000, otherwise no bonus.",
+        "hint": "Use IF function",
+        "solution": "=IF(A1>5000,A1*10%,0)"
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Dynamic Exercise: Top 3 Sales",
+        "description": "Use **LARGE** and **INDEX** to extract the top 3 sales values from a range.",
+        "solution": "=LARGE(A2:A20,1), =LARGE(A2:A20,2), =LARGE(A2:A20,3)"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices for Formulas"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Name ranges** for clarity",
+          "**Break complex formulas** into steps",
+          "**Avoid hardcoding values**—use cell references",
+          "**Comment formulas** in documentation sheets",
+          "**Regularly audit** for accuracy"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Use **Evaluate Formula** (Formulas > Evaluate Formula) to debug step by step."
+    }
+  ]
+}

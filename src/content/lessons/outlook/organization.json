@@ -1,0 +1,430 @@
+{
+  "id": "organization",
+  "title": "📁 Email Organization",
+  "description": "Master email organization techniques including folders, rules, categories, and search to maintain an efficient inbox.",
+  "metadata": {
+    "duration": "15 minutes",
+    "difficulty": "Intermediate",
+    "prerequisites": ["intro"]
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "content": "Advanced Email Organization in Outlook"
+    },
+    {
+      "type": "paragraph",
+      "content": "Effective email organization is the key to maintaining productivity and reducing stress. This comprehensive guide covers advanced techniques for organizing your inbox, automating email management, and finding information quickly."
+    },
+    {
+      "type": "heading",
+      "content": "Folder Structure and Organization"
+    },
+    {
+      "type": "subheading",
+      "content": "Creating a Logical Folder Structure"
+    },
+    {
+      "type": "paragraph",
+      "content": "A well-organized folder structure helps you quickly find emails and maintain a clean inbox. Create folders based on your workflow and priorities."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Action Required** - Emails needing immediate attention",
+          "**Follow Up** - Emails requiring follow-up later",
+          "**Projects** - Project-specific communications",
+          "**Reference** - Important information to keep",
+          "**Archive** - Completed or old conversations"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Folder Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Keep it simple** - Don't create too many folders",
+          "**Use clear names** - Descriptive folder names",
+          "**Group related items** - Similar emails together",
+          "**Review regularly** - Clean up unused folders",
+          "**Limit depth** - Avoid too many subfolders"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Email Rules and Automation"
+    },
+    {
+      "type": "subheading",
+      "content": "Creating Email Rules"
+    },
+    {
+      "type": "paragraph",
+      "content": "Email rules automatically process incoming emails based on criteria you set, saving time and keeping your inbox organized."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Select emails** - Choose emails to base rule on",
+          "**Set conditions** - Define when rule applies",
+          "**Choose actions** - What happens to matching emails",
+          "**Set exceptions** - When rule should not apply",
+          "**Test and activate** - Verify rule works correctly"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Common Rule Examples"
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Rule Type", "Condition", "Action"],
+        "rows": [
+          ["Newsletter", "From: newsletter@company.com", "Move to Newsletters folder"],
+          ["Meeting Requests", "Subject contains: meeting", "Move to Calendar folder"],
+          ["High Priority", "From: boss@company.com", "Mark as important"],
+          ["Auto Reply", "Subject contains: vacation", "Send automatic reply"],
+          ["Spam Filter", "From: unknown sender", "Move to Junk folder"]
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Start with simple rules and gradually add complexity. Test each rule with a few emails before applying it to all messages."
+    },
+    {
+      "type": "heading",
+      "content": "Categories and Color Coding"
+    },
+    {
+      "type": "subheading",
+      "content": "Using Categories"
+    },
+    {
+      "type": "paragraph",
+      "content": "Categories provide visual organization and help you quickly identify email types and priorities."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Red** - Urgent or high priority",
+          "**Blue** - Work-related",
+          "**Green** - Personal",
+          "**Yellow** - Follow-up needed",
+          "**Purple** - Project-specific",
+          "**Orange** - Meetings"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Category Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Create categories** - Set up your color system",
+          "**Apply consistently** - Use same colors for same types",
+          "**Quick categorization** - Use keyboard shortcuts",
+          "**Filter by category** - View emails by type",
+          "**Customize names** - Rename categories as needed"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Search and Find"
+    },
+    {
+      "type": "subheading",
+      "content": "Basic Search Techniques"
+    },
+    {
+      "type": "paragraph",
+      "content": "Outlook's search capabilities help you find emails quickly using various criteria."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Instant Search** - Real-time search results",
+          "**Search folders** - Save common searches",
+          "**Advanced search** - Use multiple criteria",
+          "**Search operators** - Refine search results",
+          "**Search suggestions** - Outlook's intelligent suggestions"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Search Operators"
+    },
+    {
+      "type": "code",
+      "data": {
+        "language": "outlook",
+        "code": "from:john@company.com     // Emails from specific sender\nsubject:meeting           // Emails with 'meeting' in subject\nhasattachment:yes        // Emails with attachments\nreceived:today           // Emails received today\nsize:>1MB                // Large emails (>1MB)"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Inbox Zero Strategy"
+    },
+    {
+      "type": "subheading",
+      "content": "The 4 D's Method"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Delete** - Remove unnecessary emails immediately",
+          "**Delegate** - Forward to appropriate person",
+          "**Defer** - Move to follow-up folder for later",
+          "**Do** - Handle emails that take less than 2 minutes"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Daily Email Processing"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Morning review** - Process new emails first thing",
+          "**Quick triage** - Sort emails by priority",
+          "**Batch processing** - Handle similar emails together",
+          "**End-of-day cleanup** - Clear inbox before leaving",
+          "**Weekly review** - Archive old emails"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Set Up Email Rules",
+        "description": "Create rules to automatically organize your inbox: move newsletters to a folder, flag emails from your boss as important, and categorize project emails.",
+        "hint": "Start with one rule at a time and test each before creating the next",
+        "solution": "1. Right-click email > Create Rule\n2. Set condition (From specific sender)\n3. Choose action (Move to folder)\n4. Set exception if needed\n5. Test with existing emails"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Organization Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Quick Steps"
+    },
+    {
+      "type": "paragraph",
+      "content": "Quick Steps combine multiple actions into a single click, saving time on repetitive tasks."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Reply and Delete** - Respond and remove from inbox",
+          "**Move to Folder** - Quick folder organization",
+          "**Flag and Move** - Mark for follow-up and organize",
+          "**Create Appointment** - Convert email to calendar event",
+          "**Forward to Team** - Share with specific group"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Focused Inbox"
+    },
+    {
+      "type": "paragraph",
+      "content": "Focused Inbox automatically separates important emails from less important ones, helping you focus on what matters most."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Focused tab** - Important emails",
+          "**Other tab** - Less important emails",
+          "**Automatic learning** - Improves over time",
+          "**Manual adjustment** - Move emails between tabs",
+          "**Customization** - Adjust focus settings"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Email Templates"
+    },
+    {
+      "type": "subheading",
+      "content": "Creating Templates"
+    },
+    {
+      "type": "paragraph",
+      "content": "Email templates save time by providing pre-written content for common communications."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Draft the email** - Write your template content",
+          "**Save as template** - File > Save As > Outlook Template",
+          "**Organize templates** - Create template folder",
+          "**Use templates** - Insert > Item > Outlook Item",
+          "**Update regularly** - Keep templates current"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Common Template Types"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Meeting requests** - Standard meeting invitations",
+          "**Status updates** - Regular progress reports",
+          "**Thank you notes** - Professional acknowledgments",
+          "**Follow-up emails** - Post-meeting communications",
+          "**Out-of-office replies** - Professional absence messages"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Email Security and Cleanup"
+    },
+    {
+      "type": "subheading",
+      "content": "Junk Email Management"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Safe senders** - Trusted email addresses",
+          "**Blocked senders** - Prevent unwanted emails",
+          "**Junk folder review** - Check for false positives",
+          "**Phishing protection** - Detect fraudulent emails",
+          "**Automatic cleanup** - Regular junk folder emptying"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Email Cleanup Tools"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Clean Up** - Remove redundant conversations",
+          "**Archive** - Move old emails to archive",
+          "**Empty Deleted Items** - Permanently remove deleted emails",
+          "**Compact PST** - Reduce file size",
+          "**Mailbox cleanup** - Comprehensive cleanup wizard"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Mobile Email Organization"
+    },
+    {
+      "type": "subheading",
+      "content": "Mobile Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Quick actions** - Use swipe gestures for common actions",
+          "**Focused inbox** - Enable on mobile for consistency",
+          "**Offline access** - Download important emails",
+          "**Push notifications** - Configure for important emails only",
+          "**Sync settings** - Ensure consistency across devices"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Mobile Organization Features"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Swipe actions** - Quick delete, flag, or move",
+          "**Smart filters** - Automatic email categorization",
+          "**Search suggestions** - Intelligent search assistance",
+          "**Voice commands** - Organize emails by voice",
+          "**Widget support** - Quick access to important emails"
+        ]
+      }
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Practice: Implement Inbox Zero",
+        "description": "Apply the 4 D's method to process your current inbox. Create folders, set up categories, and establish a daily email processing routine.",
+        "hint": "Start with the oldest emails first and work your way to the newest",
+        "solution": "1. Create essential folders (Action, Follow-up, Archive)\n2. Apply categories to existing emails\n3. Delete unnecessary emails\n4. Move emails to appropriate folders\n5. Set up daily processing routine"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices Summary"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Process regularly** - Handle emails daily",
+          "**Use automation** - Set up rules and Quick Steps",
+          "**Maintain structure** - Keep folder system organized",
+          "**Apply categories** - Use color coding consistently",
+          "**Search effectively** - Master search operators",
+          "**Clean up regularly** - Archive old emails",
+          "**Secure your inbox** - Manage junk and spam",
+          "**Stay consistent** - Use same system across devices"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Remember that email organization is a personal system. What works for one person may not work for another. Experiment with different approaches and find what works best for your workflow and preferences."
+    }
+  ]
+} 

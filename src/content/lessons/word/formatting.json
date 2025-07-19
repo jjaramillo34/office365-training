@@ -1,0 +1,344 @@
+{
+  "id": "formatting",
+  "title": "🎨 Advanced Word Formatting",
+  "description": "Master the art of document formatting in Microsoft Word. Learn how to create professional, visually appealing documents that stand out.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "type": "text",
+      "markdown": "Master the art of document formatting in Microsoft Word. Learn how to create professional, visually appealing documents that stand out."
+    },
+    {
+      "id": "learning-objectives",
+      "title": "🎯 Learning Objectives",
+      "type": "objectives",
+      "objectives": [
+        "Master text formatting techniques",
+        "Understand paragraph formatting",
+        "Learn to use styles effectively",
+        "Create professional document layouts",
+        "Apply consistent formatting"
+      ],
+      "image": {
+        "src": "/images/screenshots/word/formatting/word-formatting-interface.png",
+        "alt": "Word Formatting Interface"
+      }
+    },
+    {
+      "id": "text-formatting",
+      "title": "📝 Text Formatting",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "basic-styles",
+          "title": "Basic Text Styles",
+          "type": "table",
+          "table": {
+            "headers": ["Style", "Shortcut", "Description"],
+            "rows": [
+              ["**Bold**", "`Ctrl + B`", "Makes text stand out"],
+              ["*Italic*", "`Ctrl + I`", "Emphasizes text"],
+              ["~~Strikethrough~~", "`Ctrl + Shift + X`", "Shows deleted text"],
+              ["`Code`", "`Ctrl + Shift + C`", "Monospace font"]
+            ]
+          }
+        },
+        {
+          "id": "advanced-formatting",
+          "title": "Advanced Formatting",
+          "type": "content",
+          "markdown": "Use consistent formatting throughout your documents to maintain a professional appearance.",
+          "image": {
+            "src": "/images/screenshots/word/formatting/word-formatting-feature.png",
+            "alt": "Advanced Font Dialog"
+          },
+          "codeBlock": {
+            "language": "text",
+            "content": "• Use consistent formatting throughout\n• Avoid over-formatting\n• Choose readable fonts\n• Maintain proper contrast"
+          },
+          "tip": {
+            "type": "pro",
+            "content": "Less is more! Don't over-format your documents. Choose 2-3 formatting styles and stick to them consistently."
+          }
+        }
+      ]
+    },
+    {
+      "id": "paragraph-formatting",
+      "title": "📊 Paragraph Formatting",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "alignment",
+          "title": "Alignment Options",
+          "type": "content",
+          "markdown": "Choose the right alignment for different types of content to improve readability and visual appeal.",
+          "image": {
+            "src": "/images/screenshots/word/formatting/word-formatting-step1.png",
+            "alt": "Paragraph Alignment"
+          },
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Left Align** - Default for most text",
+              "**Center** - Great for titles and headings",
+              "**Right Align** - Useful for dates and signatures",
+              "**Justify** - Creates clean, even edges"
+            ]
+          }
+        },
+        {
+          "id": "spacing",
+          "title": "Spacing and Indentation",
+          "type": "code",
+          "codeBlock": {
+            "language": "css",
+            "title": "Example paragraph styles",
+            "content": "/* Example paragraph styles */\np {\n  line-height: 1.5;\n  margin-bottom: 1em;\n  text-indent: 0.5in;\n}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "styles-themes",
+      "title": "🎨 Styles and Themes",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "built-in-styles",
+          "title": "Built-in Styles",
+          "type": "content",
+          "markdown": "Word comes with a variety of built-in styles that you can use to format your documents consistently.",
+          "image": {
+            "src": "/images/screenshots/word/formatting/word-formatting-step2.png",
+            "alt": "Styles Gallery"
+          },
+          "table": {
+            "headers": ["Style Type", "Use Case", "Example"],
+            "rows": [
+              ["**Heading 1**", "Main titles", "Document Title"],
+              ["**Heading 2**", "Section headers", "Section Name"],
+              ["**Heading 3**", "Subsection headers", "Subsection Name"],
+              ["**Normal**", "Body text", "Regular paragraphs"]
+            ]
+          }
+        },
+        {
+          "id": "custom-styles",
+          "title": "Custom Styles",
+          "type": "content",
+          "markdown": "Create your own styles to maintain consistency across your documents.",
+          "image": {
+            "src": "/images/screenshots/word/formatting/word-formatting-result.png",
+            "alt": "Style Result"
+          },
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Create a new style**",
+              "**Apply formatting**",
+              "**Save the style**",
+              "**Use consistently**"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "lists-bullets",
+      "title": "📋 Lists and Bullets",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "bulleted-lists",
+          "title": "Bulleted Lists",
+          "type": "list",
+          "list": {
+            "type": "bullet",
+            "items": [
+              "**Primary items** - Main points",
+              "**Secondary items** - Supporting details",
+              "**Tertiary items** - Additional information"
+            ]
+          }
+        },
+        {
+          "id": "numbered-lists",
+          "title": "Numbered Lists",
+          "type": "list",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**First step** - Start here",
+              "**Second step** - Continue here",
+              "**Third step** - Finish here"
+            ]
+          }
+        },
+        {
+          "id": "task-lists",
+          "title": "Task Lists",
+          "type": "list",
+          "list": {
+            "type": "task",
+            "items": [
+              "Complete basic formatting",
+              "Apply styles",
+              "Create custom theme",
+              "Test document layout"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "images",
+      "title": "🖼️ Working with Images",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "inserting-images",
+          "title": "Inserting Images",
+          "type": "list",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Click Insert tab**",
+              "**Select Pictures**",
+              "**Choose image file**",
+              "**Adjust size and position**"
+            ]
+          }
+        },
+        {
+          "id": "image-formatting",
+          "title": "Image Formatting",
+          "type": "table",
+          "table": {
+            "headers": ["Property", "Description"],
+            "rows": [
+              ["**Size**", "Adjust width and height"],
+              ["**Position**", "Inline or floating"],
+              ["**Wrap Text**", "Text around image"],
+              ["**Effects**", "Shadows, borders, etc."]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "page-layout",
+      "title": "📄 Page Layout",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "margins-orientation",
+          "title": "Margins and Orientation",
+          "type": "code",
+          "codeBlock": {
+            "language": "text",
+            "content": "Standard Margins:\n• Top: 1 inch\n• Bottom: 1 inch\n• Left: 1 inch\n• Right: 1 inch"
+          }
+        },
+        {
+          "id": "headers-footers",
+          "title": "Headers and Footers",
+          "type": "tip",
+          "tip": {
+            "type": "info",
+            "content": "Headers and footers appear on every page. Use them for page numbers, document titles, or company information."
+          }
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "title": "🎯 Best Practices",
+      "type": "content",
+      "subsections": [
+        {
+          "id": "document-organization",
+          "title": "Document Organization",
+          "type": "list",
+          "list": {
+            "type": "numbered",
+            "items": [
+              "**Use consistent styles** throughout",
+              "**Maintain logical structure** with headings",
+              "**Include page breaks** between sections",
+              "**Add table of contents** for long documents",
+              "**Proofread formatting** before finalizing"
+            ]
+          }
+        },
+        {
+          "id": "professional-appearance",
+          "title": "Professional Appearance",
+          "type": "list",
+          "list": {
+            "type": "task",
+            "items": [
+              "**Templates** - Use built-in or custom templates",
+              "**Styles** - Apply consistent heading styles",
+              "**Headers/Footers** - Include page numbers",
+              "**White Space** - Use proper spacing",
+              "**Fonts** - Choose professional fonts"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "practice-exercise",
+      "title": "🏋️ Practice Exercise",
+      "type": "exercise",
+      "exercise": {
+        "title": "Create a Professional Report",
+        "description": "Practice your formatting skills by creating a professional-looking report with proper structure and styling.",
+        "image": {
+          "src": "/images/screenshots/word/formatting/word-formatting-result.png",
+          "alt": "Sample Report"
+        },
+        "steps": [
+          "**Open Word** and create a new document",
+          "**Add a title** using Heading 1 style",
+          "**Create sections** with Heading 2 styles",
+          "**Add content** with proper formatting",
+          "**Insert images** and format them",
+          "**Add page numbers** in footer",
+          "**Save** with descriptive name"
+        ],
+        "checklist": [
+          "Title formatted as Heading 1",
+          "At least 3 sections with Heading 2",
+          "Consistent paragraph formatting",
+          "One image properly inserted",
+          "Page numbers in footer",
+          "Professional font choices"
+        ],
+        "estimatedTime": "15 minutes",
+        "difficulty": "intermediate"
+      }
+    },
+    {
+      "id": "additional-resources",
+      "title": "🔗 Additional Resources",
+      "type": "content",
+      "markdown": "Explore these resources to learn more about Word formatting:\n\n- [Microsoft Word Formatting Guide](https://support.microsoft.com/en-us/word)\n- [Word Templates Gallery](https://templates.office.com/)\n- [Typography Best Practices](https://www.microsoft.com/en-us/microsoft-365/blog/)"
+    },
+    {
+      "id": "next-steps",
+      "title": "📚 Next Steps",
+      "type": "content",
+      "markdown": "In the next lesson, you'll learn:\n\n- **Advanced Styles** - Creating custom styles\n- **Document Themes** - Applying consistent colors\n- **Master Documents** - Managing large documents\n- **Collaboration Features** - Working with others\n\n> **Key Takeaway**: Good formatting makes your documents more readable and professional. Practice these techniques to create outstanding Word documents!"
+    }
+  ],
+  "metadata": {
+    "estimatedTime": "45 minutes",
+    "difficulty": "intermediate",
+    "prerequisites": ["intro"],
+    "tags": ["formatting", "styles", "professional", "document-layout"],
+    "lastUpdated": "2024-01-15"
+  }
+} 

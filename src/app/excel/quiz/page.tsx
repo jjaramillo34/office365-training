@@ -5,7 +5,18 @@ import { useRouter } from "next/navigation";
 import { excelQuiz } from "../quiz";
 import { CheckCircle, XCircle, ArrowRight, ArrowLeft, Trophy, BarChart3 } from "lucide-react";
 
+// Function to shuffle array
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export default function ExcelQuizPage() {
+  const [shuffledQuiz, setShuffledQuiz] = useState(() => shuffleArray(excelQuiz));
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -29,7 +40,7 @@ export default function ExcelQuizPage() {
     if (answeredQuestions.has(currentQuestion)) return;
     
     setSelectedAnswer(answerIndex);
-    const correct = answerIndex === excelQuiz[currentQuestion].correct;
+    const correct = answerIndex === shuffledQuiz[currentQuestion].correct;
     setIsCorrect(correct);
     
     if (correct) {
@@ -40,7 +51,7 @@ export default function ExcelQuizPage() {
   };
 
   const handleNext = () => {
-    if (currentQuestion < excelQuiz.length - 1) {
+    if (currentQuestion < shuffledQuiz.length - 1) {
       setCurrentQuestion(prev => prev + 1);
       setSelectedAnswer(null);
       setIsCorrect(null);
@@ -58,6 +69,7 @@ export default function ExcelQuizPage() {
   };
 
   const handleRetake = () => {
+    setShuffledQuiz(shuffleArray(excelQuiz));
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setIsCorrect(null);
@@ -73,11 +85,11 @@ export default function ExcelQuizPage() {
     return `${mins}:${secs.toString().padStart(2)}`;
   };
 
-  const progress = (currentQuestion / excelQuiz.length) * 100;
-  const question = excelQuiz[currentQuestion];
+  const progress = (currentQuestion / shuffledQuiz.length) * 100;
+  const question = shuffledQuiz[currentQuestion];
 
   if (showResults) {
-    const percentage = Math.round((score / excelQuiz.length) * 100);
+    const percentage = Math.round((score / shuffledQuiz.length) * 100);
     const isPassing = percentage >= 70;
     return (
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-8 px-4">
@@ -117,11 +129,11 @@ export default function ExcelQuizPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gray-50 rounded-xl p-6">
-                  <div className="text-2xl font-bold text-green-600">Correct Answers</div>
+                  <div className="text-2xl font-bold text-green-600">{score}</div>
                   <div className="text-gray-600">Correct Answers</div>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-6">
-                  <div className="text-2xl font-bold text-gray-600">{excelQuiz.length - score}</div>
+                  <div className="text-2xl font-bold text-gray-600">{shuffledQuiz.length - score}</div>
                   <div className="text-gray-600">Incorrect Answers</div>
                 </div>
                 <div className="bg-gray-50 rounded-xl p-6">
@@ -166,25 +178,40 @@ export default function ExcelQuizPage() {
 
         {/* Progress Bar */}
         <div className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-4">
-              <span className="text-sm font-medium text-gray-600">
-                Question {currentQuestion + 1} of {excelQuiz.length}
-              </span>
-              <span className="text-sm font-medium text-gray-600">
-                Score: {score}/{excelQuiz.length}
-              </span>
-            </div>
-            <div className="text-sm font-medium text-gray-600">
-              Time: {formatTime(timeLeft)}
+          {/* Timer - Prominent and Centered */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-full shadow-lg">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                <span className="text-lg font-bold">{formatTime(timeLeft)}</span>
+                <span className="text-sm opacity-90">remaining</span>
+              </div>
             </div>
           </div>
           
-          <div className="w-full bg-gray-200 rounded-full h-3">
+          {/* Progress Info */}
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-4">
+              <span className="text-sm font-medium text-gray-600">
+                Question {currentQuestion + 1} of {shuffledQuiz.length}
+              </span>
+              <span className="text-sm font-medium text-gray-600">
+                Score: {score}/{shuffledQuiz.length}
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-600">
+              {Math.round(progress)}% Complete
+            </div>
+          </div>
+          
+          {/* Progress Bar */}
+          <div className="w-full bg-gray-200 rounded-full h-4 relative overflow-hidden">
             <div 
-              className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transition-all duration-300 ease-out"
+              className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transition-all duration-500 ease-out h-full relative"
               style={{ width: `${progress}%` }}
-            />
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-pulse"></div>
+            </div>
           </div>
         </div>
 
@@ -240,23 +267,39 @@ export default function ExcelQuizPage() {
           </div>
         </div>
 
-        {/* Feedback */}
+        {/* Feedback and Tips */}
         {selectedAnswer !== null && (
-          <div className={`p-4 rounded-xl mb-6 ${
-            isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
-          }`}>
-            <div className="flex items-center gap-2">
-              {isCorrect ? (
-                <CheckCircle className="w-5 h-5 text-green-600" />
-              ) : (
-                <XCircle className="w-5 h-5 text-red-600" />
-              )}
-              <span className={`font-medium ${
-                isCorrect ? "text-green-700" : "text-red-700"
-              }`}>
-                {isCorrect ? "Correct!" : "Incorrect. The correct answer is highlighted above."}
-              </span>
+          <div className="space-y-4 mb-6">
+            {/* Result Feedback */}
+            <div className={`p-4 rounded-xl ${
+              isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"
+            }`}>
+              <div className="flex items-center gap-2">
+                {isCorrect ? (
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                ) : (
+                  <XCircle className="w-5 h-5 text-red-600" />
+                )}
+                <span className={`font-medium ${
+                  isCorrect ? "text-green-700" : "text-red-700"
+                }`}>
+                  {isCorrect ? "Correct!" : "Incorrect. The correct answer is highlighted above."}
+                </span>
+              </div>
             </div>
+            
+            {/* Tip */}
+            {question.tip && (
+              <div className="bg-blue-50 border border-blue-200 p-4 rounded-xl">
+                <div className="flex items-start gap-2">
+                  <div className="w-5 h-5 text-blue-600 mt-0.5">💡</div>
+                  <div>
+                    <span className="font-medium text-blue-700">Tip:</span>
+                    <span className="text-blue-600 ml-1">{question.tip}</span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -273,7 +316,7 @@ export default function ExcelQuizPage() {
             onClick={handleNext}
             disabled={selectedAnswer === null}
             className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-xl hover:bg-green-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-semibold">
-            {currentQuestion === excelQuiz.length - 1 ? "Finish Quiz" : "Next"}
+            {currentQuestion === shuffledQuiz.length - 1 ? "Finish Quiz" : "Next"}
             <ArrowRight className="w-5 h-5" />
           </button>
         </div>
