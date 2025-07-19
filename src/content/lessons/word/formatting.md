@@ -1,178 +1,203 @@
-# Advanced Document Formatting in Word
+# 🎨 Advanced Word Formatting
 
-Professional document formatting is crucial for creating polished, readable content. This comprehensive guide covers everything from basic text formatting to advanced page layout techniques.
+## Overview
+Master the art of document formatting in Microsoft Word. Learn how to create professional, visually appealing documents that stand out.
 
-## Text Formatting Fundamentals
+---
 
-### Font Selection and Management
-**Choosing the Right Font**
-- **Serif fonts** (Times New Roman, Georgia): Best for printed documents, formal content
-- **Sans-serif fonts** (Arial, Calibri): Excellent for digital content, modern look
-- **Decorative fonts**: Use sparingly for headers or special elements
+## 🎯 Learning Objectives
 
-**Font Size Guidelines**
-- **Body text**: 11-12for most documents
-- **Headings**: 14-18oint, depending on hierarchy
-- **Footnotes**: 9-10 **Large documents**: Consider 10r space efficiency
+![Word Formatting](/images/screenshots/word/formatting/word-formatting-interface.png)
 
-### Advanced Text Effects
-**Character Formatting**
-- **Bold (Ctrl+B)**: Emphasize important points
-- **Italic (Ctrl+I)**: Foreign words, book titles, emphasis
-- **Underline (Ctrl+U)**: Use sparingly, can reduce readability
-- **Strikethrough**: Show deleted content or alternatives
-- **Subscript/Superscript**: Mathematical expressions, footnotes
+- [ ] Master text formatting techniques
+- [ ] Understand paragraph formatting
+- [ ] Learn to use styles effectively
+- [ ] Create professional document layouts
+- [ ] Apply consistent formatting
 
-**Text Color and Highlighting**
-- **Text color**: Use for emphasis, not decoration
-- **Highlighting**: Temporary emphasis, remove before final version
-- **Accessibility**: Ensure sufficient contrast (4051ratio minimum)
+---
 
-## Paragraph Formatting Mastery
+## 📝 Text Formatting
+
+### Basic Text Styles
+
+| Style | Shortcut | Description |
+|-------|----------|-------------|
+| **Bold** | `Ctrl + B` | Makes text stand out |
+| *Italic* | `Ctrl + I` | Emphasizes text |
+| ~~Strikethrough~~ | `Ctrl + Shift + X` | Shows deleted text |
+| `Code` | `Ctrl + Shift + C` | Monospace font |
+
+### Advanced Formatting
+![Advanced Font Dialog](/images/screenshots/word/formatting/word-formatting-feature.png)
+
+```text
+• Use consistent formatting throughout
+• Avoid over-formatting
+• Choose readable fonts
+• Maintain proper contrast
+```
+
+> **Pro Tip**: Less is more! Don't over-format your documents. Choose 2-3 formatting styles and stick to them consistently.
+
+---
+
+## 📊 Paragraph Formatting
 
 ### Alignment Options
-- **Left align (Ctrl+L)**: Standard for most documents
-- **Center align (Ctrl+E)**: Headers, titles, short quotes
-- **Right align (Ctrl+R)**: Headers, page numbers
-- **Justify (Ctrl+J)**: Professional documents, newspapers
+![Paragraph Alignment](/images/screenshots/word/formatting/word-formatting-step1.png)
 
-### Line and Paragraph Spacing
-**Line Spacing Options**
-- **Single**: Standard spacing
-- **1.15htly more readable
-- **1.5**: Good for drafts and editing
-- **Double**: Academic papers, formal documents
-- **Multiple**: Custom spacing (e.g.,13*Paragraph Spacing**
-- **Before/After spacing**: Add space between paragraphs
-- **Don't use double Enter**: Use paragraph spacing instead
-- **Consistent spacing**: Maintain uniform spacing throughout
+- **Left Align** - Default for most text
+- **Center** - Great for titles and headings
+- **Right Align** - Useful for dates and signatures
+- **Justify** - Creates clean, even edges
 
-## Page Layout and Design
+### Spacing and Indentation
 
-### Margins and Page Setup
-**Standard Margins**
-- **Normal**: 1 inch all around
-- **Narrow**: 0.5r space efficiency
-- **Wide**: 1.25r formal documents
-- **Custom**: Set specific margins for unique needs
+```css
+/* Example paragraph styles */
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+  text-indent: 0.5in;
+}
+```
 
-**Page Orientation**
-- **Portrait**: Standard for most documents
-- **Landscape**: Tables, charts, wide content
-- **Mixed**: Different orientations in same document
+---
+
+## 🎨 Styles and Themes
+
+### Built-in Styles
+![Styles Gallery](/images/screenshots/word/formatting/word-formatting-step2.png)
+
+| Style Type | Use Case | Example |
+|------------|----------|---------|
+| **Heading 1** | Main titles | Document Title |
+| **Heading 2** | Section headers | Section Name |
+| **Heading 3** | Subsection headers | Subsection Name |
+| **Normal** | Body text | Regular paragraphs |
+
+### Custom Styles
+![Style Result](/images/screenshots/word/formatting/word-formatting-result.png)
+
+1. **Create a new style**
+2. **Apply formatting**
+3. **Save the style**
+4. **Use consistently**
+
+---
+
+## 📋 Lists and Bullets
+
+### Bulleted Lists
+- **Primary items** - Main points
+- **Secondary items** - Supporting details
+  - Nested items
+  - More details
+- **Tertiary items** - Additional information
+
+### Numbered Lists
+1. **First step** - Start here
+2. **Second step** - Continue here
+3. **Third step** - Finish here
+
+### Task Lists
+- [x] Complete basic formatting
+- [x] Apply styles
+- [ ] Create custom theme
+- [ ] Test document layout
+
+---
+
+## 🖼️ Working with Images
+### Inserting Images
+1. **Click Insert tab**
+2. **Select Pictures**
+3. **Choose image file**
+4. **Adjust size and position**
+
+### Image Formatting
+| Property | Description |
+|----------|-------------|
+| **Size** | Adjust width and height |
+| **Position** | Inline or floating |
+| **Wrap Text** | Text around image |
+| **Effects** | Shadows, borders, etc. |
+
+---
+
+## 📄 Page Layout
+### Margins and Orientation
+```text
+Standard Margins:
+• Top: 1 inch
+• Bottom: 1 inch
+• Left: 1 inch
+• Right: 1 inch
+```
 
 ### Headers and Footers
-**Professional Headers**
-- **Company name**: Top left or center
-- **Document title**: Top center
-- **Page numbers**: Top or bottom right
-- **Date**: Top right or bottom
+> **Remember**: Headers and footers appear on every page. Use them for page numbers, document titles, or company information.
 
-**Footer Elements**
-- **Page numbers**: Bottom center or right
-- **Copyright information**: Bottom left
-- **Document path**: For internal documents
-- **Revision date**: For version control
+---
 
-## Styles and Templates
+## 🎯 Best Practices
+### Document Organization
+1. **Use consistent styles** throughout
+2. **Maintain logical structure** with headings
+3. **Include page breaks** between sections
+4. **Add table of contents** for long documents
+5. **Proofread formatting** before finalizing
 
-### Using Built-in Styles
-**Heading Styles**
-- **Heading 1 document sections
-- **Heading 2: Subsections
-- **Heading 3**: Sub-subsections
-- **Custom styles**: Create your own
+### Professional Appearance
+- [ ] **Templates** - Use built-in or custom templates
+- [ ] **Styles** - Apply consistent heading styles
+- [ ] **Headers/Footers** - Include page numbers
+- [ ] **White Space** - Use proper spacing
+- [ ] **Fonts** - Choose professional fonts
 
-**Paragraph Styles**
-- **Normal**: Default body text
-- **Quote**: Indented text with special formatting
-- **List Paragraph**: For bulleted and numbered lists
-- **Title**: Document title formatting
+---
 
-### Creating Custom Styles
-**Style Creation Process**1at text as desired
-2. Select the formatted text
-3t-click and choose "Styles" → Save Selection as New Style"
-4ame your style and set options
+## 🏋️ Practice Exercise
+### Create a Professional Report
+![Sample Report](/images/screenshots/word/formatting/word-formatting-result.png)
 
-**Style Management**
-- **Modify existing styles**: Right-click style → Modify
-- **Delete unused styles**: Styles pane → Manage Styles
-- **Import/Export styles**: Share styles between documents
+#### ✅ Steps:
+1. **Open Word** and create a new document
+2. **Add a title** using Heading 1 style
+3. **Create sections** with Heading 2 styles
+4. **Add content** with proper formatting
+5. **Insert images** and format them
+6. **Add page numbers** in footer
+7. **Save** with descriptive name
 
-## Advanced Formatting Techniques
+#### 📋 Checklist:
+- [ ] Title formatted as Heading 1
+- [ ] At least 3 sections with Heading 2
+- [ ] Consistent paragraph formatting
+- [ ] One image properly inserted
+- [ ] Page numbers in footer
+- [ ] Professional font choices
 
-### Tables and Lists
-**Table Formatting**
-- **AutoFit**: Automatically adjust column widths
-- **Table styles**: Professional table designs
-- **Borders and shading**: Enhance readability
-- **Cell merging**: Create complex layouts
+---
 
-**List Formatting**
-- **Multilevel lists**: Hierarchical information
-- **Custom bullets**: Use symbols or images
-- **Numbering options**: Legal, outline, or custom formats
-- **List styles**: Consistent list formatting
+## 🔗 Additional Resources
+- [Microsoft Word Formatting Guide](https://support.microsoft.com/en-us/word)
+- [Word Templates Gallery](https://templates.office.com/)
+- [Typography Best Practices](https://www.microsoft.com/en-us/microsoft-365/blog/)
 
-### Graphics and Objects
-**Image Formatting**
-- **Text wrapping**: Square, tight, through, behind text
-- **Positioning**: In line, floating, or anchored
-- **Size and scaling**: Maintain aspect ratio
-- **Compression**: Reduce file size
+---
 
-**Shape and SmartArt**
-- **Shapes**: Basic geometric forms
-- **SmartArt**: Professional diagrams
-- **Charts**: Data visualization
-- **WordArt**: Decorative text effects
+## 📚 Next Steps
+In the next lesson, you'll learn:
+- **Advanced Styles** - Creating custom styles
+- **Document Themes** - Applying consistent colors
+- **Master Documents** - Managing large documents
+- **Collaboration Features** - Working with others
 
-## Best Practices for Professional Documents
+> **Key Takeaway**: Good formatting makes your documents more readable and professional. Practice these techniques to create outstanding Word documents!
 
-### Consistency is Key
-**Formatting Standards**
-- **Use styles**: Dont format manually
-- **Consistent spacing**: Same spacing throughout
-- **Color scheme**: Limit to 2-3- **Font hierarchy**: Clear heading structure
+---
 
-### Accessibility Considerations
-**Readability**
-- **Font size**: Minimum 11pt for body text
-- **Line spacing**: 1.15 or 1.5 for readability
-- **Contrast**: High contrast for text
-- **Alt text**: Describe images for screen readers
-
-### File Management
-**Document Organization**
-- **Meaningful names**: Descriptive file names
-- **Version control**: Use "Save As" for major changes
-- **Backup strategy**: Regular backups
-- **Template library**: Reusable document templates
-
-## Troubleshooting Formatting Issues
-
-### Common Problems
-**Formatting Won't Apply**
-- **Clear formatting**: Remove all formatting first
-- **Check styles**: Ensure correct style is applied
-- **Update styles**: Modify style instead of direct formatting
-- **Copy formatting**: Use Format Painter tool
-
-**Inconsistent Appearance**
-- **Show formatting marks**: Reveal hidden characters
-- **Check for manual formatting**: Override styles
-- **Update all instances**: Apply style to all similar elements
-- **Template issues**: Check document template
-
-### Performance Optimization
-**Large Document Tips**
-- **Compress images**: Reduce file size
-- **Remove unused styles**: Clean up style gallery
-- **Limit embedded fonts**: Use standard fonts
-- **Regular saves**: Prevent data loss
-
-## Next Steps
-Mastering document formatting takes practice. Start with simple documents and gradually incorporate advanced techniques. Remember that good formatting enhances readability and professionalism.
-
-> **Pro Tip**: Create a personal style guide for your organization to ensure consistency across all documents. 
+### 🎉 Congratulations!
+You've completed the Advanced Word Formatting lesson! Your documents will now look much more professional and polished.
