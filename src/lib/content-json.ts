@@ -62,9 +62,9 @@ export async function loadAllLessonsJSON(module: string): Promise<LessonSummary[
           id: lesson.id,
           title: lesson.title,
           description: lesson.description,
-          estimatedTime: lesson.metadata.estimatedTime,
-          difficulty: lesson.metadata.difficulty,
-          tags: lesson.metadata.tags
+          estimatedTime: lesson.metadata?.estimatedTime || lesson.metadata?.duration || '20 minutes',
+          difficulty: lesson.metadata?.difficulty || 'beginner',
+          tags: lesson.metadata?.tags || []
         });
       }
     }

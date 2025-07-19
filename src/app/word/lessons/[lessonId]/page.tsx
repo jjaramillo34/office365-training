@@ -89,7 +89,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
             <div className="flex items-center space-x-6">
               <div className="flex items-center text-sm text-gray-600 bg-gray-100 px-3 py-2 rounded-full">
                 <Clock size={16} className="mr-2" />
-                {lesson.metadata.estimatedTime}
+                {lesson.metadata?.estimatedTime || lesson.metadata?.duration || '20 minutes'}
               </div>
               <div className="flex items-center text-sm text-blue-600 bg-blue-100 px-3 py-2 rounded-full">
                 <BookOpen size={16} className="mr-2" />

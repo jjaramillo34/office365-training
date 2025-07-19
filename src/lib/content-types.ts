@@ -38,25 +38,28 @@ export interface Exercise {
 }
 
 export interface ContentSection {
-  id: string;
-  title: string;
-  type: 'text' | 'content' | 'table' | 'list' | 'exercise' | 'objectives' | 'tip' | 'code';
+  id?: string;
+  title?: string;
+  type: 'heading' | 'subheading' | 'paragraph' | 'text' | 'content' | 'table' | 'list' | 'exercise' | 'objectives' | 'tip' | 'code';
+  content?: string;
   markdown?: string;
   image?: LessonImage;
   codeBlock?: CodeBlock;
   tip?: Tip;
   table?: TableData;
   list?: ListData;
+  data?: any;
   exercise?: Exercise;
   objectives?: string[];
   subsections?: ContentSection[];
 }
 
 export interface LessonMetadata {
-  estimatedTime: string;
+  duration?: string;
+  estimatedTime?: string;
   difficulty: 'beginner' | 'intermediate' | 'advanced';
   prerequisites?: string[];
-  tags: string[];
+  tags?: string[];
   lastUpdated?: string;
 }
 
@@ -65,7 +68,7 @@ export interface LessonContent {
   title: string;
   description: string;
   sections: ContentSection[];
-  metadata: LessonMetadata;
+  metadata?: LessonMetadata;
 }
 
 export interface LessonSummary {
