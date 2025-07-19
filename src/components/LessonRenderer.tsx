@@ -835,20 +835,20 @@ export default function LessonRenderer({ lesson }: LessonRendererProps) {
     );
   };
 
-  // Group sections by headings and render content properly
+  // Render all sections properly
   const renderSections = () => {
-    const sections = [];
-    let currentHeading = null;
-    let currentContent = [];
+    const sections: React.ReactElement[] = [];
+    let currentHeading: any = null;
+    let currentContent: any[] = [];
 
     for (let i = 0; i < lesson.sections.length; i++) {
       const section = lesson.sections[i];
       
-      if (section.type === 'heading' as any) {
+      if (section.type === 'heading') {
         // If we have a previous heading, render it with its content
         if (currentHeading) {
           sections.push(
-            <div key={currentHeading.id || Math.random()} className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-8">
+            <div key={currentHeading.id || `heading-${i}`} className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-8">
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-6 border-b border-gray-100">
                 <h2 className="text-2xl font-bold text-gray-900 flex items-center">
                   {getSectionIcon(currentHeading)}
@@ -857,9 +857,9 @@ export default function LessonRenderer({ lesson }: LessonRendererProps) {
               </div>
               <div className="p-8">
                 <div className="prose prose-lg prose-blue max-w-none">
-                  {currentContent.map((content, index) => (
-                    <div key={index}>
-                      {renderSectionContent(content)}
+                  {currentContent.map((contentSection, index) => (
+                    <div key={`${currentHeading.id || 'content'}-${index}`}>
+                      {renderSectionContent(contentSection)}
                     </div>
                   ))}
                 </div>
@@ -868,24 +868,28 @@ export default function LessonRenderer({ lesson }: LessonRendererProps) {
           );
         }
         
-        // Start new heading
+        // Start a new heading section
         currentHeading = section;
         currentContent = [];
       } else {
-        // Add content to current heading
+        // Add content to the current heading
         if (currentHeading) {
           currentContent.push(section);
         } else {
-          // If no heading, render standalone
-          sections.push(renderSectionContent(section));
+          // If no heading, render as standalone section
+          sections.push(
+            <div key={`standalone-${i}`}>
+              {renderSectionContent(section)}
+            </div>
+          );
         }
       }
     }
-
-    // Render the last heading if exists
+    
+    // Don't forget the last heading section
     if (currentHeading) {
       sections.push(
-        <div key={currentHeading.id || Math.random()} className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-8">
+        <div key={currentHeading.id || `heading-final`} className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden mb-8">
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-6 border-b border-gray-100">
             <h2 className="text-2xl font-bold text-gray-900 flex items-center">
               {getSectionIcon(currentHeading)}
@@ -894,9 +898,9 @@ export default function LessonRenderer({ lesson }: LessonRendererProps) {
           </div>
           <div className="p-8">
             <div className="prose prose-lg prose-blue max-w-none">
-              {currentContent.map((content, index) => (
-                <div key={index}>
-                  {renderSectionContent(content)}
+              {currentContent.map((contentSection, index) => (
+                <div key={`${currentHeading.id || 'content'}-${index}`}>
+                  {renderSectionContent(contentSection)}
                 </div>
               ))}
             </div>
@@ -904,13 +908,17 @@ export default function LessonRenderer({ lesson }: LessonRendererProps) {
         </div>
       );
     }
-
+    
     return sections;
   };
 
   return (
     <div className="space-y-8">
-      {renderSections()}
+      {renderSections().map((section, index) => (
+        <div key={`section-${index}`}>
+          {section}
+        </div>
+      ))}
     </div>
   );
 } 

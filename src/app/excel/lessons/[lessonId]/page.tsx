@@ -7,17 +7,17 @@ import LessonRenderer from "@/components/LessonRenderer";
 
 // Generate static params for all available lesson IDs
 export async function generateStaticParams() {
-  console.log("Generating static params for Excel lessons...");
+
   
   try {
     const lessons = await loadAllLessonsJSON("excel");
-    console.log("Excel lessons found:", lessons.map((l: any) => l.id));
+  
     
     const params = lessons.map((lesson) => ({
       lessonId: lesson.id,
     }));
     
-    console.log("Excel lesson params generated:", params);
+  
     return params;
   } catch (error) {
     console.error("Error generating Excel lesson params:", error);
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
       { lessonId: "charts" },
       { lessonId: "bonus" },
     ];
-    console.log("Using fallback Excel lesson params:", fallbackParams);
+  
     return fallbackParams;
   }
 }
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 export default async function LessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
   const { lessonId } = await params;
   
-  console.log(`Rendering Excel lesson page for lessonId: ${lessonId}`);
+
   
   let lesson: LessonContent | null;
   try {
@@ -57,7 +57,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
     return notFound();
   }
   
-  console.log(`Successfully loaded lesson: ${lesson.title}`);
+
 
   // Extract navigation items from sections with defensive programming
   const navigationItems = lesson.sections

@@ -7,17 +7,17 @@ import LessonRenderer from "@/components/LessonRenderer";
 
 // Generate static params for all available lesson IDs
 export async function generateStaticParams() {
-  console.log("Generating static params for Word lessons...");
+
   
   try {
     const lessons = await loadAllLessonsJSON("word");
-    console.log("Word lessons found:", lessons.map(l => l.id));
+  
     
     const params = lessons.map((lesson) => ({
       lessonId: lesson.id,
     }));
     
-    console.log("Word lesson params generated:", params);
+  
     return params;
   } catch (error) {
     console.error("Error generating Word lesson params:", error);
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
       { lessonId: "advanced" },
       { lessonId: "bonus" },
     ];
-    console.log("Using fallback Word lesson params:", fallbackParams);
+  
     return fallbackParams;
   }
 }
@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 export default async function LessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
   const { lessonId } = await params;
   
-  console.log(`Rendering Word lesson page for lessonId: ${lessonId}`);
+
   
   let lesson: LessonContent | null;
   try {
@@ -57,7 +57,7 @@ export default async function LessonPage({ params }: { params: Promise<{ lessonI
     return notFound();
   }
   
-  console.log(`Successfully loaded lesson: ${lesson.title}`);
+
 
   // Extract navigation items from sections with defensive programming
   const navigationItems = lesson.sections

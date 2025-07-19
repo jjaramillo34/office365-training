@@ -6,7 +6,7 @@ export async function loadLessonContentJSON(module: string, lessonId: string): P
   try {
     const filePath = path.join(process.cwd(), 'src', 'content', 'lessons', module, `${lessonId}.json`);
     
-    console.log(`Loading JSON lesson content from: ${filePath}`);
+  
     
     if (!fs.existsSync(filePath)) {
       console.error(`Lesson JSON file not found: ${filePath}`);
@@ -28,7 +28,7 @@ export async function loadLessonContentJSON(module: string, lessonId: string): P
       return null;
     }
     
-    console.log(`Successfully loaded JSON lesson: ${module}/${lessonId} - "${lessonData.title}"`);
+  
     
     return lessonData;
   } catch (error) {
@@ -41,7 +41,7 @@ export async function loadAllLessonsJSON(module: string): Promise<LessonSummary[
   try {
     const modulePath = path.join(process.cwd(), 'src', 'content', 'lessons', module);
     
-    console.log(`Loading all JSON lessons from: ${modulePath}`);
+  
     
     if (!fs.existsSync(modulePath)) {
       console.error(`Module directory not found: ${modulePath}`);
@@ -51,7 +51,7 @@ export async function loadAllLessonsJSON(module: string): Promise<LessonSummary[
     const files = fs.readdirSync(modulePath);
     const jsonFiles = files.filter(file => file.endsWith('.json'));
     
-    console.log(`Found ${jsonFiles.length} JSON lesson files in ${module}:`, jsonFiles);
+  
     
     const lessons: LessonSummary[] = [];
     for (const file of jsonFiles) {
@@ -69,7 +69,7 @@ export async function loadAllLessonsJSON(module: string): Promise<LessonSummary[
       }
     }
     
-    console.log(`Successfully loaded ${lessons.length} JSON lessons for module ${module}`);
+  
     
     return lessons.sort((a, b) => a.id.localeCompare(b.id));
   } catch (error) {

@@ -1,374 +1,260 @@
 {
   "id": "advanced",
-  "title": "📘 Advanced Word Features",
-  "description": "Take your Word skills to the next level with advanced features that will make you more productive and help you create professional documents.",
+  "title": "🚀 Advanced Word Features",
+  "description": "Advanced Word features help you create professional documents efficiently. This lesson covers styles, templates, headers/footers, and collaboration tools that will enhance your productivity.",
+  "metadata": {
+    "duration": "35 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "formatting"]
+  },
   "sections": [
     {
-      "id": "overview",
-      "title": "Overview",
-      "type": "text",
-      "markdown": "Take your Word skills to the next level with advanced features that will make you more productive and help you create professional documents."
+      "type": "paragraph",
+      "content": "Take your Word skills to the next level with advanced features that will make you more productive and help you create professional documents efficiently."
     },
     {
-      "id": "learning-objectives",
-      "title": "✅ Learning Objectives",
-      "type": "objectives",
-      "objectives": [
-        "Master **Word styles and templates**",
-        "Work with **headers, footers, and page numbers**",
-        "Use **advanced collaboration features**",
-        "Create **professional document layouts**"
-      ]
+      "type": "heading",
+      "content": "Learning Objectives"
     },
     {
-      "id": "styles-templates",
-      "title": "🎨 Styles and Templates",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "understanding-styles",
-          "title": "Understanding Styles",
-          "type": "content",
-          "markdown": "Styles are predefined formatting combinations applied to text for quick and consistent appearance.",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Key Benefits:**",
-              "Consistent formatting across documents",
-              "Easy to update multiple elements at once",
-              "Professional look with minimal effort"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Common Style Types:**",
-              "**Heading Styles**: For document structure (Heading 1, 2, 3)",
-              "**Paragraph Styles**: Control paragraph formatting",
-              "**Character Styles**: Apply to selected text only",
-              "**Linked Styles**: Apply to paragraphs or selected text"
-            ]
-          }
-        },
-        {
-          "id": "creating-custom-styles",
-          "title": "✅ Creating Custom Styles",
-          "type": "list",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "Format text as desired",
-              "Select the formatted text",
-              "Right-click → **Styles → Save Selection as a New Quick Style**",
-              "Name your style and click **OK**"
-            ]
-          }
-        },
-        {
-          "id": "using-templates",
-          "title": "Using Templates",
-          "type": "content",
-          "markdown": "Templates are pre-designed documents to save time.",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Built-in Templates:**",
-              "Letters",
-              "Reports",
-              "Resumes",
-              "Newsletters",
-              "Brochures"
-            ]
-          },
-          "list": {
-            "type": "numbered",
-            "items": [
-              "**Creating Custom Templates:**",
-              "Design your document",
-              "Go to **File → Save As**",
-              "Choose **Word Template (*.dotx)**",
-              "Save in the Templates folder"
-            ]
-          }
-        }
-      ]
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "Master advanced styles and templates",
+          "Create professional headers and footers",
+          "Use collaboration and review features",
+          "Implement advanced document layout",
+          "Create and use macros for automation"
+        ]
+      }
     },
     {
-      "id": "headers-footers",
-      "title": "🖋 Headers, Footers, and Page Numbers",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "adding-headers-footers",
-          "title": "Adding Headers and Footers",
-          "type": "content",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "**Steps:**",
-              "Go to **Insert → Header** or **Insert → Footer**",
-              "Choose a built-in design or select **Edit Header/Footer**",
-              "Type your content",
-              "Double-click outside to exit"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Common Elements:**",
-              "Document title",
-              "Page numbers",
-              "Date and time",
-              "Company logo",
-              "Author name"
-            ]
-          }
-        },
-        {
-          "id": "page-numbers",
-          "title": "Page Numbers",
-          "type": "content",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "**Automatic Page Numbering:**",
-              "Go to **Insert → Page Number**",
-              "Choose position (top, bottom, margins)",
-              "Select a design style"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Custom Page Numbering:**",
-              "Start from a specific number",
-              "Use different formats (1, 2, 3 or A, B, C)",
-              "Include chapter numbers"
-            ]
-          }
-        },
-        {
-          "id": "different-headers-footers",
-          "title": "Different Headers/Footers",
-          "type": "list",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**First Page Different**: Great for title pages",
-              "**Odd & Even Pages**: Common in books/reports"
-            ]
-          }
-        }
-      ]
+      "type": "heading",
+      "content": "Styles and Templates"
     },
     {
-      "id": "collaboration-features",
-      "title": "🤝 Advanced Collaboration Features",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "track-changes",
-          "title": "Track Changes",
-          "type": "content",
-          "markdown": "Track all modifications made to a document.",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Enable Track Changes:**",
-              "Go to **Review → Track Changes**",
-              "Click to turn it on"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Review Changes:**",
-              "Accept or reject changes",
-              "Add comments for clarity"
-            ]
-          }
-        },
-        {
-          "id": "comments",
-          "title": "Comments",
-          "type": "content",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "**Add Comments:**",
-              "Select text",
-              "Go to **Review → New Comment**"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Manage Comments:**",
-              "Reply",
-              "Resolve",
-              "Delete"
-            ]
-          }
-        },
-        {
-          "id": "document-comparison",
-          "title": "Document Comparison",
-          "type": "content",
-          "markdown": "Compare two versions of a document:",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "Go to **Review → Compare**",
-              "Choose original and revised documents",
-              "Review the differences"
-            ]
-          }
-        }
-      ]
+      "type": "subheading",
+      "content": "Advanced Style Management"
     },
     {
-      "id": "professional-layout",
-      "title": "📰 Professional Document Layout",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "section-breaks",
-          "title": "Section Breaks",
-          "type": "content",
-          "markdown": "Allow different formatting in different sections.",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Types:**",
-              "**Next Page**: Starts new section on next page",
-              "**Continuous**: Same page",
-              "**Even/Odd Page**: Starts on specific page types"
-            ]
-          }
-        },
-        {
-          "id": "columns",
-          "title": "Columns",
-          "type": "content",
-          "markdown": "Create multi-column layouts:",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "Select text",
-              "Go to **Layout → Columns**",
-              "Choose number of columns"
-            ]
-          }
-        },
-        {
-          "id": "table-of-contents",
-          "title": "Table of Contents (TOC)",
-          "type": "content",
-          "markdown": "Automatically generate a TOC:",
-          "list": {
-            "type": "numbered",
-            "items": [
-              "Apply heading styles",
-              "Place cursor where TOC should appear",
-              "Go to **References → Table of Contents**",
-              "Choose a style"
-            ]
-          },
-          "tip": {
-            "type": "info",
-            "content": "**Update TOC:** Right-click → **Update Field**"
-          }
-        }
-      ]
+      "type": "paragraph",
+      "content": "Create and manage complex style hierarchies for professional documents."
     },
     {
-      "id": "best-practices",
-      "title": "✅ Best Practices",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "document-organization",
-          "title": "Document Organization",
-          "type": "list",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "Use consistent heading styles",
-              "Logical structure",
-              "Use page and section breaks properly"
-            ]
-          }
-        },
-        {
-          "id": "collaboration",
-          "title": "Collaboration",
-          "type": "list",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "Always use Track Changes",
-              "Add clear comments",
-              "Use meaningful file names"
-            ]
-          }
-        },
-        {
-          "id": "professional-appearance",
-          "title": "Professional Appearance",
-          "type": "list",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "Use templates",
-              "Apply styles, not manual formatting",
-              "Include headers, footers, and page numbers"
-            ]
-          }
-        }
-      ]
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Style Sets**: Predefined collections of styles",
+          "**Quick Styles**: Apply multiple styles at once",
+          "**Style Inspector**: Analyze and modify styles",
+          "**Style Organizer**: Copy styles between documents"
+        ]
+      }
     },
     {
-      "id": "practice-exercise",
-      "title": "🏆 Practice Exercise",
+      "type": "subheading",
+      "content": "Creating Templates"
+    },
+    {
+      "type": "paragraph",
+      "content": "Build reusable templates to maintain consistency across documents."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Design your document with proper styles",
+          "Add placeholder text and images",
+          "Set up headers, footers, and page numbers",
+          "Save as **Word Template (.dotx)**",
+          "Share templates with your team"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Headers, Footers, and Page Numbers"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Header/Footer Design"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create professional headers and footers with dynamic content and branding."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Company logos** and branding elements",
+          "**Document information** (title, author, date)",
+          "**Navigation elements** (chapter numbers, section names)",
+          "**Dynamic fields** (page numbers, dates, file paths)"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Complex Page Numbering"
+    },
+    {
+      "type": "paragraph",
+      "content": "Implement sophisticated page numbering schemes for complex documents."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Roman numerals** for front matter (i, ii, iii)",
+          "**Arabic numbers** for main content (1, 2, 3)",
+          "**Chapter-based numbering** (1-1, 1-2, 2-1)",
+          "**Restart numbering** at section breaks"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Collaboration Features"
+    },
+    {
+      "type": "subheading",
+      "content": "Track Changes and Comments"
+    },
+    {
+      "type": "paragraph",
+      "content": "Collaborate effectively with team members using Word's review features."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Track Changes**: See all edits and modifications",
+          "**Comments**: Add notes and suggestions",
+          "**Reviewing Pane**: View all changes in one place",
+          "**Accept/Reject**: Process changes systematically"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Document Sharing and Co-authoring"
+    },
+    {
+      "type": "paragraph",
+      "content": "Work simultaneously with others on the same document."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Save document to **OneDrive** or **SharePoint**",
+          "Share with specific people or groups",
+          "Set permission levels (view, edit, comment)",
+          "See real-time changes from collaborators",
+          "Resolve conflicts when they occur"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Professional Document Layout"
+    },
+    {
+      "type": "subheading",
+      "content": "Advanced Page Setup"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create complex document layouts with multiple sections and formatting."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Multiple columns** with different widths",
+          "**Custom margins** for different sections",
+          "**Landscape/portrait** orientation mixing",
+          "**Mirror margins** for double-sided printing"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Table of Contents and Indexing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Create automatic navigation elements for long documents."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Apply proper **heading styles** throughout document",
+          "Insert **Table of Contents** from References tab",
+          "Choose **format and levels** to include",
+          "**Update** TOC when content changes",
+          "Create **index entries** for important terms"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Plan your document structure** before starting",
+          "**Use consistent styles** throughout the document",
+          "**Test collaboration features** with your team",
+          "**Backup important templates** regularly",
+          "**Document your processes** for team consistency"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Practice Exercise"
+    },
+    {
       "type": "exercise",
-      "exercise": {
-        "title": "Create a Professional Report",
-        "description": "Practice all the advanced features you've learned by creating a comprehensive professional report.",
+      "data": {
+        "title": "Create a Professional Template",
+        "description": "Build a comprehensive document template with advanced features for your organization.",
         "steps": [
-          "Create a **professional report** using:",
-          "Heading styles",
-          "Different header/footer for title page",
-          "Page numbers",
-          "Table of contents",
-          "Section breaks for different layouts",
-          "Enable Track Changes and add comments",
-          "Save as a template"
+          "Design a company letterhead template",
+          "Add dynamic headers and footers",
+          "Create custom styles for your brand",
+          "Include collaboration features",
+          "Test the template with sample content"
         ],
-        "estimatedTime": "30 minutes",
+        "checklist": [
+          "Template includes company branding",
+          "Headers and footers are professional",
+          "Styles are consistent and branded",
+          "Collaboration features work properly",
+          "Template is ready for team use"
+        ],
+        "estimatedTime": "25 minutes",
         "difficulty": "advanced"
       }
     },
     {
-      "id": "key-takeaways",
-      "title": "🔑 Key Takeaways",
-      "type": "list",
-      "list": {
-        "type": "bullet",
-        "items": [
-          "**Styles and templates** ensure consistency",
-          "**Headers and footers** add professionalism",
-          "**Track Changes** improves collaboration",
-          "**Section breaks** allow flexible layouts",
-          "**TOCs** make navigation easy"
-        ]
-      }
+      "type": "tip",
+      "content": "Use **Building Blocks** (Quick Parts) to save frequently used content like signatures, disclaimers, or standard paragraphs for quick insertion."
     }
-  ],
-  "metadata": {
-    "estimatedTime": "45 minutes",
-    "difficulty": "advanced",
-    "prerequisites": ["intro", "formatting"],
-    "tags": ["advanced", "styles", "templates", "collaboration", "professional"],
-    "lastUpdated": "2024-01-15"
-  }
+  ]
 } 

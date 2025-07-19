@@ -1,150 +1,296 @@
 {
   "id": "bonus",
-  "title": "🚀 Bonus: Cool Word Features",
-  "description": "Discover the hidden gems of Microsoft Word that will make you look like a **power user**! From **mail merge** to **macros**, these features will save you time and impress your colleagues.",
+  "title": "🎯 Word Power User Tips",
+  "description": "Unlock Word's hidden power features that can transform your workflow. From mail merge to macros, these advanced tools will help you work smarter and faster.",
+  "metadata": {
+    "duration": "25 minutes",
+    "difficulty": "Advanced",
+    "prerequisites": ["intro", "formatting", "advanced"]
+  },
   "sections": [
     {
-      "id": "overview",
-      "title": "Overview",
-      "type": "text",
-      "markdown": "Discover the hidden gems of Microsoft Word that will make you look like a **power user**! From **mail merge** to **macros**, these features will save you time and impress your colleagues."
+      "type": "paragraph",
+      "content": "Discover the hidden gems of Microsoft Word that will make you look like a power user! From mail merge to macros, these features will save you time and impress your colleagues."
     },
     {
-      "id": "learning-objectives",
-      "title": "✅ Learning Objectives",
-      "type": "objectives",
-      "objectives": [
-        "Master **mail merge** for personalized mass communications",
-        "Create and use **macros** to automate repetitive tasks",
-        "Explore **advanced formatting and layout features**",
-        "Use Word's built-in tools for **efficiency**"
-      ]
+      "type": "heading",
+      "content": "Learning Objectives"
     },
     {
-      "id": "mail-merge",
-      "title": "✉️ Mail Merge: Your Secret Weapon",
-      "type": "content",
-      "subsections": [
-        {
-          "id": "what-is-mail-merge",
-          "title": "What is Mail Merge?",
-          "type": "content",
-          "markdown": "Mail merge creates **personalized documents** (letters, emails, labels) by combining:",
-          "list": {
-            "type": "bullet",
-            "items": [
-              "A **main document**",
-              "A **data source** (like Excel)"
-            ]
-          },
-          "list": {
-            "type": "bullet",
-            "items": [
-              "**Perfect for:**",
-              "Personalized letters",
-              "Student certificates",
-              "Mass communications",
-              "Address labels"
-            ]
-          }
-        },
-        {
-          "id": "setting-up-mail-merge",
-          "title": "Setting Up Mail Merge",
-          "type": "content",
-          "markdown": "Learn how to set up and use mail merge effectively.",
-          "image": {
-            "src": "https://i.imgur.com/4n3ytx2.png",
-            "alt": "Mail Merge Screenshot"
-          },
-          "tip": {
-            "type": "pro",
-            "content": "Mail merge is perfect for creating personalized documents at scale. It's commonly used for certificates, letters, and labels."
-          }
-        }
-      ]
-    },
-    {
-      "id": "macros",
-      "title": "🤖 Macros: Automate Everything",
-      "type": "content",
-      "markdown": "Macros are small programs that automate repetitive tasks in Word. They can save you hours of work!",
-      "tip": {
-        "type": "warning",
-        "content": "Always be careful with macros from unknown sources, as they can contain malicious code."
-      }
-    },
-    {
-      "id": "advanced-features",
-      "title": "🎯 Advanced Features",
-      "type": "content",
-      "markdown": "Explore Word's advanced features that most users never discover.",
-      "list": {
-        "type": "bullet",
-        "items": [
-          "**Smart Art** - Create professional diagrams",
-          "**WordArt** - Stylized text effects",
-          "**Equations** - Mathematical formulas",
-          "**Citations** - Academic references",
-          "**Bibliography** - Automatic citation lists"
-        ]
-      }
-    },
-    {
-      "id": "efficiency-tips",
-      "title": "⚡ Efficiency Tips",
-      "type": "content",
-      "markdown": "Become a Word power user with these time-saving tips.",
-      "list": {
-        "type": "bullet",
-        "items": [
-          "**Quick Parts** - Save and reuse content",
-          "**AutoText** - Automatic text expansion",
-          "**Building Blocks** - Reusable document parts",
-          "**Templates** - Create your own templates",
-          "**Styles** - Consistent formatting"
-        ]
-      }
-    },
-    {
-      "id": "practice-exercise",
-      "title": "🏆 Practice Exercise",
-      "type": "exercise",
-      "exercise": {
-        "title": "Create a Mail Merge Document",
-        "description": "Practice mail merge by creating personalized certificates or letters.",
-        "steps": [
-          "Create a **main document** (letter or certificate)",
-          "Prepare an **Excel data source** with names and details",
-          "Set up **mail merge** fields",
-          "**Preview** and **complete** the merge",
-          "Save the **merged documents**"
-        ],
-        "estimatedTime": "20 minutes",
-        "difficulty": "intermediate"
-      }
-    },
-    {
-      "id": "key-takeaways",
-      "title": "🔑 Key Takeaways",
       "type": "list",
-      "list": {
-        "type": "bullet",
+      "data": {
+        "type": "unordered",
         "items": [
-          "**Mail merge** saves time on mass communications",
-          "**Macros** automate repetitive tasks",
-          "**Advanced features** make documents stand out",
-          "**Efficiency tools** boost productivity",
-          "**Practice** makes perfect with these features"
+          "Master mail merge for mass communications",
+          "Create and use macros for automation",
+          "Utilize advanced find and replace features",
+          "Implement document protection and security",
+          "Use advanced field codes and formulas"
         ]
       }
+    },
+    {
+      "type": "heading",
+      "content": "Mail Merge Mastery"
+    },
+    {
+      "type": "subheading",
+      "content": "Understanding Mail Merge"
+    },
+    {
+      "type": "paragraph",
+      "content": "Mail merge allows you to create personalized documents for multiple recipients automatically."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Main Document**: Your template with placeholders",
+          "**Data Source**: Excel spreadsheet or database with recipient info",
+          "**Merge Fields**: Placeholders that get replaced with actual data",
+          "**Output**: Personalized documents for each recipient"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Creating a Mail Merge"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Create your main document with merge fields",
+          "Go to **Mailings** tab > **Start Mail Merge**",
+          "Select **Step by Step Mail Merge Wizard**",
+          "Choose document type (letters, emails, labels)",
+          "Select recipients from existing list or create new",
+          "Insert merge fields where you want personalized data",
+          "Preview and complete the merge"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Macros and Automation"
+    },
+    {
+      "type": "subheading",
+      "content": "Recording Macros"
+    },
+    {
+      "type": "paragraph",
+      "content": "Automate repetitive tasks by recording your actions as macros."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Go to **View** tab > **Macros** > **Record Macro**",
+          "Name your macro and assign a shortcut key",
+          "Perform the actions you want to automate",
+          "Click **Stop Recording** when finished",
+          "Test your macro with the assigned shortcut"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Common Macro Uses"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Format documents** with consistent styling",
+          "**Insert frequently used text** or signatures",
+          "**Apply complex formatting** sequences",
+          "**Clean up imported text** from other sources",
+          "**Generate reports** with specific formatting"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Find and Replace"
+    },
+    {
+      "type": "subheading",
+      "content": "Using Wildcards and Patterns"
+    },
+    {
+      "type": "paragraph",
+      "content": "Go beyond simple find and replace with powerful pattern matching."
+    },
+    {
+      "type": "table",
+      "data": {
+        "headers": ["Wildcard", "Description", "Example"],
+        "rows": [
+          ["**?**", "Any single character", "c?t finds cat, cut, cot"],
+          ["*****", "Any number of characters", "s*d finds sad, said, started"],
+          ["**[abc]**", "Any character in brackets", "[aeiou] finds any vowel"],
+          ["**[!abc]**", "Any character NOT in brackets", "[!aeiou] finds consonants"],
+          ["**{n}**", "Exactly n occurrences", "a{3} finds aaa"]
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Find and Replace with Formatting"
+    },
+    {
+      "type": "paragraph",
+      "content": "Find and replace not just text, but also formatting and styles."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Find specific formatting** (bold, italic, font size)",
+          "**Replace formatting** without changing text",
+          "**Find and replace styles** throughout document",
+          "**Use special characters** (paragraph marks, tabs)",
+          "**Apply formatting** to found text"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Document Protection and Security"
+    },
+    {
+      "type": "subheading",
+      "content": "Restricting Editing"
+    },
+    {
+      "type": "paragraph",
+      "content": "Control who can edit your documents and what changes they can make."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Read-only**: No changes allowed",
+          "**Comments only**: Can add comments but not edit text",
+          "**Tracked changes**: Can edit but changes are tracked",
+          "**Filling forms**: Can only fill in form fields",
+          "**No changes**: Completely locked document"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Password Protection"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Go to **File** > **Info** > **Protect Document**",
+          "Choose **Encrypt with Password**",
+          "Enter a strong password",
+          "Confirm the password",
+          "Save the document"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Advanced Field Codes"
+    },
+    {
+      "type": "subheading",
+      "content": "Using Field Codes"
+    },
+    {
+      "type": "paragraph",
+      "content": "Field codes provide dynamic content that updates automatically."
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          "**Date and Time**: Current date, creation date, last saved",
+          "**Document Information**: Title, author, file size",
+          "**Calculations**: Simple math operations",
+          "**Cross-references**: Links to headings, figures, tables",
+          "**Conditional content**: Show/hide based on conditions"
+        ]
+      }
+    },
+    {
+      "type": "subheading",
+      "content": "Inserting Field Codes"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "Press **Ctrl + F9** to insert field braces",
+          "Type the field name inside braces",
+          "Add any switches or parameters",
+          "Press **F9** to update the field",
+          "Press **Alt + F9** to toggle field code view"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Practice Exercise"
+    },
+    {
+      "type": "exercise",
+      "data": {
+        "title": "Create a Mail Merge Campaign",
+        "description": "Practice mail merge by creating a personalized email campaign for a fictional company.",
+        "steps": [
+          "Create a main document with merge fields",
+          "Set up a data source with recipient information",
+          "Insert appropriate merge fields",
+          "Preview the merged documents",
+          "Complete the merge and save results"
+        ],
+        "checklist": [
+          "Main document has proper merge fields",
+          "Data source contains all necessary information",
+          "Merge fields are correctly formatted",
+          "Preview shows personalized content",
+          "Final documents are properly formatted"
+        ],
+        "estimatedTime": "15 minutes",
+        "difficulty": "advanced"
+      }
+    },
+    {
+      "type": "heading",
+      "content": "Best Practices"
+    },
+    {
+      "type": "list",
+      "data": {
+        "type": "ordered",
+        "items": [
+          "**Test macros** in a copy of your document first",
+          "**Use descriptive names** for macros and merge fields",
+          "**Backup important documents** before running automation",
+          "**Document your processes** for team consistency",
+          "**Keep security in mind** when sharing protected documents"
+        ]
+      }
+    },
+    {
+      "type": "tip",
+      "content": "Use **Quick Parts** to save frequently used content like signatures, disclaimers, or standard paragraphs for quick insertion."
     }
-  ],
-  "metadata": {
-    "estimatedTime": "30 minutes",
-    "difficulty": "intermediate",
-    "prerequisites": ["intro", "formatting", "advanced"],
-    "tags": ["bonus", "mail-merge", "macros", "advanced-features", "efficiency"],
-    "lastUpdated": "2024-01-15"
-  }
+  ]
 } 

@@ -12,7 +12,7 @@ export async function loadLessonContent(module: string, lessonId: string): Promi
   try {
     const filePath = path.join(process.cwd(), 'src', 'content', 'lessons', module, `${lessonId}.md`);
     
-    console.log(`Loading lesson content from: ${filePath}`);
+  
     
     if (!fs.existsSync(filePath)) {
       console.error(`Lesson file not found: ${filePath}`);
@@ -40,7 +40,7 @@ export async function loadLessonContent(module: string, lessonId: string): Promi
       }
     }
     
-    console.log(`Successfully loaded lesson: ${module}/${lessonId} - "${title}"`);
+  
     
     return {
       id: lessonId,
@@ -58,7 +58,7 @@ export async function loadAllLessons(module: string): Promise<LessonContent[]> {
   try {
     const modulePath = path.join(process.cwd(), 'src', 'content', 'lessons', module);
     
-    console.log(`Loading all lessons from: ${modulePath}`);
+  
     
     if (!fs.existsSync(modulePath)) {
       console.error(`Module directory not found: ${modulePath}`);
@@ -68,7 +68,7 @@ export async function loadAllLessons(module: string): Promise<LessonContent[]> {
     const files = fs.readdirSync(modulePath);
     const markdownFiles = files.filter(file => file.endsWith('.md'));
     
-    console.log(`Found ${markdownFiles.length} lesson files in ${module}:`, markdownFiles);
+  
     
     const lessons: LessonContent[] = [];
     for (const file of markdownFiles) {
@@ -79,7 +79,7 @@ export async function loadAllLessons(module: string): Promise<LessonContent[]> {
       }
     }
     
-    console.log(`Successfully loaded ${lessons.length} lessons for module ${module}`);
+  
     
     return lessons.sort((a, b) => a.id.localeCompare(b.id));
   } catch (error) {
