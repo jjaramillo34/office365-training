@@ -141,31 +141,22 @@ office365-training/
 
 ## 🌐 Deployment
 
-### Vercel (Recommended & Optimized)
-This application is specifically optimized for Vercel deployment with:
-- **Automatic deployments** on every push to main branch
-- **Edge functions** for optimal performance
-- **Static generation** for fast loading
-- **Image optimization** with WebP and AVIF support
-- **Security headers** configured for production
+This Next.js application can be deployed to any platform that supports Node.js applications:
 
-#### Quick Deploy Steps:
-1. **Push your code** to GitHub
-2. **Connect repository** to Vercel
-3. **Deploy automatically** - no additional configuration needed!
+### Recommended Platforms
+- **Vercel** - Optimized for Next.js with automatic deployments
+- **Netlify** - Static site hosting with build automation
+- **Railway** - Full-stack platform with easy deployment
+- **DigitalOcean App Platform** - Cloud hosting solution
+- **AWS Amplify** - AWS hosting with CI/CD integration
 
-#### Vercel Configuration:
-- `vercel.json` - Optimized for Vercel deployment
-- **Build command**: `npm run build`
-- **Output directory**: `.next`
-- **Node.js version**: 18.x (automatically detected)
+### Deployment Steps
+1. **Build the application**: `npm run build`
+2. **Start the server**: `npm start`
+3. **Configure environment variables** if needed
+4. **Deploy to your chosen platform**
 
-### Alternative Platforms
-The app is also compatible with other platforms that support Next.js:
-- **Netlify** - Static site hosting
-- **Railway** - Full-stack platform
-- **DigitalOcean App Platform** - Cloud hosting
-- **AWS Amplify** - AWS hosting solution
+The application is built with standard Next.js conventions and should work seamlessly with most hosting platforms.
 
 ## 🤝 Contributing
 
@@ -198,6 +189,56 @@ If you have any questions or need help:
 - Create an issue on GitHub
 - Check the documentation
 - Review the code examples
+
+## 🔄 Recent Updates
+
+### Latest Improvements (Latest Release)
+
+#### 🎯 **Content Standardization & Bug Fixes**
+- **Standardized JSON Formats**: Unified lesson content structure across Excel, Word, and Outlook modules
+- **Fixed Section Titles**: Resolved "Untitled Section" display issues in lesson rendering
+- **TypeScript Type Safety**: Enhanced type definitions and null safety throughout the application
+- **Build Error Resolution**: Fixed TypeScript compilation errors and undefined metadata access
+
+#### 🛠 **Code Quality Improvements**
+- **Removed Console Logs**: Cleaned up debug output across the entire codebase
+- **React Key Warnings**: Fixed unique key prop warnings in lesson components
+- **Defensive Programming**: Added null checks and fallback values for optional metadata
+- **ESLint Compliance**: Improved code consistency and quality standards
+
+#### 🎨 **Excel Module Enhancements**
+- **ASAP Utilities Integration**: Added comprehensive section about ASAP Utilities Excel add-in
+  - **300+ Functions**: Detailed overview of productivity tools
+  - **Educational Benefits**: Focus on student data management and administrative tasks
+  - **Direct Downloads**: Links to official website and function reference
+  - **Professional Design**: Beautiful blue gradient section with interactive elements
+
+#### 📚 **Lesson Content Improvements**
+- **Consistent Structure**: All lessons now follow unified JSON schema
+- **Enhanced Rendering**: Improved `LessonRenderer` component with proper section grouping
+- **Better Navigation**: Fixed section title extraction and display
+- **Type Safety**: Updated `ContentSection` interface with new section types
+
+#### 🔧 **Technical Enhancements**
+- **Static Generation**: Optimized `generateStaticParams` for all lesson pages
+- **Error Handling**: Improved fallback mechanisms for data loading
+- **Performance**: Enhanced component rendering efficiency
+- **Accessibility**: Better semantic structure and navigation
+
+### 🚀 **What's New**
+- **ASAP Utilities Section**: Discover powerful Excel add-in for enhanced productivity
+- **Standardized Content**: Consistent lesson format across all modules
+- **Improved UX**: Better section titles and navigation
+- **Cleaner Code**: Removed debug output and enhanced type safety
+
+### 📋 **Files Updated**
+- `src/content/lessons/word/*.json` - Standardized Word lesson formats
+- `src/content/lessons/outlook/*.json` - Standardized Outlook lesson formats  
+- `src/components/LessonRenderer.tsx` - Enhanced rendering logic
+- `src/lib/content-types.ts` - Updated type definitions
+- `src/lib/content-json.ts` - Added null safety
+- `src/app/excel/page.tsx` - Added ASAP Utilities section
+- `src/app/*/lessons/[lessonId]/page.tsx` - Fixed metadata access
 
 ---
 
